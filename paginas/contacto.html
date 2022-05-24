@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../assets/logo.png" alt="logo" class="logo">
+
+        <h1>Language Learning Experience</h1>
+
+        <nav class="navbar">
+
+            <ul class="menu">
+
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li><a href="clases.html">Clases</a></li>
+
+                <li><a href="idiomas.html">Idiomas</a></li>
+
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="contacto">
+
+            <h2>Contactanos</h2>
+
+            <form action="">
+
+                <input type="text" placeholder="Nombre y Apellido"> <br>
+
+                <label for="email">Email</label>
+
+                <input type="email" placeholder="fulanito123@gmail.com"> <br>
+
+                <input type="number" placeholder="Edad" min="3" max="100">
+
+                <input type="submit" value="Enviar"><br>
+
+                <input type="reset" value="Reiniciar">
+
+            </form>
+
+            <label for="select">Selecciona el idioma a aprender</label>
+
+            <select name="select" id="">
+
+                <option value="ingles">Inglés</option>
+
+                <option value="frances">Francés</option>
+
+                <option value="aleman">Alemán</option>
+
+                <option value="italiano">Italiano</option>
+
+                <option value="portugues">Portugués</option>
+
+                <option value="ruso">Ruso</option>
+
+            </select>
+            <!-- no se si está bien hacer otro form o si los botones de radio podrían ir en el form de arriba -->
+            <form action="">
+
+                <label for="clases-s">Clases semanales</label>
+
+                <input type="radio" name="clases-s" value="1">
+
+                <label for="1">1</label>
+
+                <input type="radio" name="clases-s" value="2">
+
+                <label for="2">2</label>
+
+                <input type="radio" name="clases-s" value="3">
+
+                <label for="3">3</label>
+
+            </form>
+
+            <ol>
+
+                <li>$500</li>
+
+                <li>$900</li>
+
+                <li>$1300</li>
+
+            </ol>
+            <!-- lo mismo que arriba, de momento voy a usarlos así a los form -->
+            <form action="">
+
+                <label for="pago">Métodos de pago</label>
+
+                <input type="radio" name="pago" value="credito">
+
+                <label for="credito">Tarjeta de crédito</label>
+
+                <input type="radio" name="pago" value="debito">
+
+                <label for="debito">Tarjeta de débito</label>
+
+                <input type="radio" name="pago" value="paypal">
+
+                <label for="paypal">Paypal</label>
+
+                <input type="radio" name="pago" value="mercado">
+
+                <label for="mercado">Mercado Pago</label>
+
+                <label for="ccn">Credit Card Number:</label>
+
+                <!-- las dos siguientes lineas de codigo las saque de: https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers?msclkid=e6291122c00c11ec8628ed645d87db9d  porque estaba en duda sobre que poner si type text o number y como hacer para simular que se introduce un número de tarjeta-->
+                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                    maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+
+                <textarea name="mensaje" id="" cols="30" rows="10"
+                placeholder="Para dudas/consultas dejanos un mensaje"></textarea>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h3 class="terminos">Términos y Condiciones</h3>
+
+        <p class="terminosL">©2022 languagelearningexperience.com. Todos los derechos reservados</p>
+
+        <div class="redes">
+
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram-square"></i>
+
+            <i class="fa-brands fa-whatsapp-square"></i>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

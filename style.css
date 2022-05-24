@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+/* index.html */
+
+header {
+    background-color: #ff0000;
+
+    padding: 10px;
+
+    margin-bottom: -20px;
+}
+
+h1 {
+    height: 50px;
+
+    text-align: center;
+
+    border-style: dashed;
+
+    margin-bottom: 20px;
+
+    text-decoration: underline;
+
+    border-width: 5px;
+}
+
+.intro1 {
+    margin-bottom: 20px;
+
+    text-align: justify;
+
+    margin-top: 20px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    padding: 15px;
+
+    grid-area: text1;
+}
+
+.intro2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    text-align: justify;
+
+    margin-top: 30px;
+
+    grid-area: text2;
+}
+
+.redes {
+    text-align: right;
+
+    grid-area: terminos;
+}
+
+.logo {
+    width: 300px;
+
+    display: flex;
+
+    transition: 1.2s;
+}
+
+.logo:hover {
+    transform: scale(1.5) translate(50px);
+}
+
+.menu {
+    text-align: center;
+
+    width: 325px;
+
+    height: 25px;
+
+    margin-top: 50px;
+
+    margin-bottom: 40px;
+
+    padding: 0px;
+
+    border: double;
+
+    list-style: none;
+}
+
+.terminos {
+    text-align: center;
+
+    font-weight: bold;
+
+    font-style: oblique;
+
+    margin-left: 50px;
+
+    grid-area: terminos;
+}
+
+footer {
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translate(-50%);
+
+    display: flex;
+
+    width: 800px;
+
+    background-color: #ff0000;
+}
+
+.mainHtml {
+    background-image: url(./assets/languages.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size:contain;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows: 150px 200px 200px ;
+
+    grid-gap: 120px 100px;
+
+    grid-template-areas: "text1 text1 text1 text1"
+        "text2 text2 text2 text2"
+        "terminos terminos terminos terminos"
+}
+
+li {
+    display: inline-block;
+}
+
+.terminosL {
+    text-align: right;
+    grid-area: terminos;
+}
+
+.navbar {
+    display: flex;
+
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+
+    background-color: #ff0000;
+
+    margin: 0;
+
+    position: relative;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600) {
+    main.Html {
+        background-size: cover; 
+        background-color: #ffffff;
+    }
+    }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* sobre-nosotros.html */
+
+.equipo {
+    display: flex;
+
+    position: relative;
+
+    justify-content: right;
+}
+
+.sn {
+    background: #d3d3d3;
+}
+
+#stockEquipo {
+    transition: 1.5s;
+}
+
+#stockEquipo:hover {
+    transform: translate(-400px) scale(1.3) ;
+}
+
+/* clases.html */
+
+.clases {
+    text-align: center;
+
+    text-decoration: underline;
+
+    margin-bottom: 20px;
+}
+
+.video {
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.fondo {
+    background-color: #d3d3d3;
+}
+
+/* idiomas.html */
+
+.flags {
+    width: 100%;
+
+    min-height: 400px;
+
+    background-color: #ffa500;
+
+    background-image: linear-gradient(#ff9900, #ff5e00); 
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: 150px 200px 200px 100px;
+
+    grid-gap: 120px 100px;
+
+    grid-template-areas: "text1 ingles text2 frances"
+        "text3 aleman text4 italiano"
+        "text5 portugues text6 ruso"
+}
+
+.idioma {
+    border: 2px solid #ff0;
+}
+
+#ingles {
+    width: 320px;
+
+    grid-area: ingles;
+}
+
+.txtIngles {
+    grid-area: text1;
+}
+
+#frances {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: frances;
+}
+
+.txtFrances {
+    grid-area: text2;
+}
+
+#aleman {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: aleman;
+}
+
+.txtAleman {
+    grid-area: text3;
+}
+
+#italiano {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: italiano;
+}
+
+.txtItaliano {
+    grid-area: text4;
+}
+
+
+#portugues {
+    width: 320px;
+
+    grid-area: portugues;
+}
+
+.txtPortugues {
+    grid-area: text5;
+}
+
+#ruso {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: ruso;
+}
+
+.txtRuso {
+    grid-area: text6;
+}
+
+.footerIdiomas {
+    position: relative;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translate(-50%);
+
+    display: flex;
+
+    width: 800px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600) {
+    .main-idiomas {
+        background-color: #00ffff;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-idiomas {
+        background-color: #00ffff;
+    }
+}
+
+/* A partir de los 1036px aproximadamente cuando inspecciono el archivo idiomas.html el color de fondo
+se va moviendo para la izquierda por alguna razón y algunos elementos quedan como fuera del main pareciese. */
+
+@media only screen and (min-width:1025px) and (max-width: 1200px) {
+    .main-idiomas {
+        background-color: #00ffff;
+    }
+}
+
+/* contacto.html */
+
+.contacto {
+    background-color: #d3d3d3;
+}

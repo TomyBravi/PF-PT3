@@ -142,6 +142,7 @@ li {
 
 .terminosL {
     text-align: right;
+
     grid-area: terminos;
 }
 
@@ -164,6 +165,7 @@ body {
 @media only screen and (min-width: 480px) and (max-width: 600) {
     main.Html {
         background-size: cover; 
+
         background-color: #ffffff;
     }
     }
@@ -253,6 +255,63 @@ body {
 
 .txtIngles {
     grid-area: text1;
+
+    position: relative;
+
+text-align: center;
+
+margin-top: 50px;
+
+font-weight: bold;
+
+font-size: 20px;
+
+text-decoration: underline;
+}
+
+.txtIngles:before {
+    content: attr(data-hover);
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    width: 250px;
+
+    height: 125px;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    padding: 5px 0;
+
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+
+    z-index: 1;
+
+    left: 0;
+
+    top: 110%;
+
+    background: linear-gradient(180deg, transparent, transparent 44px, #c8102e 44px, #c8102e 66px, transparent 66px, transparent 100%), linear-gradient(90deg, transparent, transparent 99px, #c8102e 99px, #c8102e 121px, transparent 121px, transparent 100%), linear-gradient(180deg, transparent, transparent 37px, #FFF 37px, #FFF 73px, transparent 73px, transparent 100%), linear-gradient(90deg, transparent, transparent 92px, #FFF 92px, #FFF 128px, transparent 128px, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 0/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 0/110px 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 55px/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 55px/110px 100% no-repeat, linear-gradient(27deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), linear-gradient(153deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), #012169;
+
+    transform: scale(3.0) translate(200px);
+
+    color: #008000;
+
+    font-size: 15px;
+}
+
+/* Como hacer la bandera del Reino Unido lo saqué de: https://codepen.io/tinhh/pen/Ormzjo .
+El hover con el texto: https://sebhastian.com/html-hover-text/ .Traté de hacer lo del texto y la imagen de fondo con el hover pero no me salía, googlee y encontré esta solución.*/
+
+.txtIngles:hover:before {
+    opacity: 1;
+    
+    visibility: visible;
 }
 
 #frances {
@@ -265,7 +324,61 @@ body {
 
 .txtFrances {
     grid-area: text2;
+
+    position: relative;
+    
+    text-align: center;
+    
+    margin-top: 50px;
+    
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    text-decoration: underline;
 }
+
+.txtFrances:before {
+    content: attr(data-hover);
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    width: 250px;
+
+    height: 125px;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    padding: 5px 0;
+
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+
+    z-index: 1;
+
+    left: 0;
+
+    top: 110%;
+
+    transform: scale(3.0) translate(-80px);
+
+    color: #008000;
+
+    font-size: 15px;
+}
+
+.txtFrances:hover:before {
+    opacity: 1;
+    background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
+    visibility: visible;
+}
+
+/* Bandera de Francia con gradientes: https://codepen.io/littlekope0903/pen/LYEvPay */
 
 #aleman {
     height: 220px;

@@ -1,0 +1,466 @@
+.flags {
+    width: 100%;
+
+    min-height: 400px;
+
+    background-color: #ffa500;
+
+    background-image: linear-gradient(#ff9900, #ff5e00);
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: 150px 200px 200px 100px;
+
+    grid-gap: 120px 100px;
+
+    grid-template-areas: "text1 ingles text2 frances"
+        "text3 aleman text4 italiano"
+        "text5 portugues text6 ruso"
+}
+
+.idioma {
+    border: 2px solid #ff0;
+}
+
+.txtIngles {
+    grid-area: text1;
+
+    position: relative;
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+    text-decoration: underline;
+
+    &:before {
+        content: attr(data-hover);
+    
+        visibility: hidden;
+    
+        opacity: 0;
+    
+        width: 250px;
+    
+        height: 125px;
+    
+        text-align: center;
+    
+        border-radius: 5px;
+    
+        padding: 5px 0;
+    
+        transition: opacity 1s ease-in-out;
+    
+        position: absolute;
+    
+        z-index: 1;
+    
+        left: 0;
+    
+        top: 110%;
+    
+        background: linear-gradient(180deg, transparent, transparent 44px, #c8102e 44px, #c8102e 66px, transparent 66px, transparent 100%), linear-gradient(90deg, transparent, transparent 99px, #c8102e 99px, #c8102e 121px, transparent 121px, transparent 100%), linear-gradient(180deg, transparent, transparent 37px, #FFF 37px, #FFF 73px, transparent 73px, transparent 100%), linear-gradient(90deg, transparent, transparent 92px, #FFF 92px, #FFF 128px, transparent 128px, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 0/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 0/110px 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 55px/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 55px/110px 100% no-repeat, linear-gradient(27deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), linear-gradient(153deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), #012169;
+    
+        transform: scale(3.0) translate(150px) translateY(-50px);
+    
+        color: #008000;
+    
+        font-size: 15px;
+    }
+
+    &:hover:before {
+        opacity: 1;
+        
+        visibility: visible;
+    }
+}
+
+#ingles {
+    width: 320px;
+
+    grid-area: ingles;
+}
+
+.txtFrances {
+    grid-area: text2;
+
+    position: relative;
+    
+    text-align: center;
+    
+    margin-top: 50px;
+    
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    text-decoration: underline;
+
+    &:before {
+        content: attr(data-hover);
+    
+        visibility: hidden;
+    
+        opacity: 0;
+    
+        width: 250px;
+    
+        height: 125px;
+    
+        text-align: center;
+    
+        border-radius: 5px;
+    
+        padding: 5px 0;
+    
+        transition: opacity 1s ease-in-out;
+    
+        position: absolute;
+    
+        z-index: 1;
+    
+        left: 0;
+    
+        top: 110%;
+    
+        transform: scale(3.0) translate(-80px) translateY(-50px);
+    
+        color: #008000;
+    
+        font-size: 15px;
+    }
+
+    &:hover:before {
+        opacity: 1;
+
+        background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
+
+        visibility: visible;
+    }
+}
+
+#frances {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: frances;
+}
+
+.txtAleman {
+    grid-area: text3;
+
+    position: relative;
+    
+    text-align: center;
+    
+    margin-top: 50px;
+    
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    text-decoration: underline;
+
+    &:before {
+        content: attr(data-hover);
+    
+        visibility: hidden;
+    
+        opacity: 0;
+    
+        width: 250px;
+    
+        height: 125px;
+    
+        text-align: center;
+    
+        border-radius: 5px;
+    
+        padding: 5px 0;
+    
+        transition: opacity 1s ease-in-out;
+    
+        position: absolute;
+    
+        z-index: 1;
+    
+        left: 0;
+    
+        top: 110%;
+    
+        transform: scale(3.0) translate(170px) translateY(-60px);
+    
+        color: #008000;
+    
+        font-size: 15px;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    
+        background: linear-gradient(#000 33.333%, #FF0000 33.33% 66.666%, #FFCC00 66.666%);;
+    
+        visibility: visible;
+    }
+}
+
+#aleman {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: aleman;
+}
+
+.txtItaliano {
+    grid-area: text4;
+
+    position: relative;
+    
+    text-align: center;
+    
+    margin-top: 50px;
+    
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    text-decoration: underline;
+
+    &:before {
+        content: attr(data-hover);
+    
+        visibility: hidden;
+    
+        opacity: 0;
+    
+        width: 250px;
+    
+        height: 125px;
+    
+        text-align: center;
+    
+        border-radius: 5px;
+    
+        padding: 5px 0;
+    
+        transition: opacity 1s ease-in-out;
+    
+        position: absolute;
+    
+        z-index: 1;
+    
+        left: 0;
+    
+        top: 110%;
+    
+        transform: scale(3.0) translate(-90px) translateY(-60px);
+    
+        color: rgb(241, 98, 241);
+    
+        font-size: 15px;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    
+        background:linear-gradient(to right, green 33%, white 33%, white 66%, red 66%);
+    
+        visibility: visible;
+    }
+}
+
+#italiano {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: italiano;
+}
+
+.txtPortugues {
+    grid-area: text5;
+
+    position: relative;
+    
+    text-align: center;
+    
+    margin-top: 50px;
+    
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    text-decoration: underline;
+
+    &:before {
+        content: attr(data-hover);
+    
+        visibility: hidden;
+    
+        opacity: 0;
+    
+        width: 250px;
+    
+        height: 125px;
+    
+        text-align: center;
+    
+        border-radius: 5px;
+    
+        padding: 5px 0;
+    
+        transition: opacity 1s ease-in-out;
+    
+        position: absolute;
+    
+        z-index: 1;
+    
+        left: 0;
+    
+        top: 110%;
+    
+        transform: scale(3.0) translate(170px) translateY(-120px);
+    
+        color: rgb(241, 98, 241);
+    
+        font-size: 15px;
+    }
+    
+    &:hover:before {
+        opacity: 1;
+    
+        background-image: url(../assets/portuguese.png);
+    
+        background-size:cover;
+    
+        background-position: center;
+    
+        visibility: visible;
+    }
+}
+
+#portugues {
+    width: 320px;
+
+    grid-area: portugues;
+}
+
+.txtRuso {
+    grid-area: text6;
+
+    position: relative;
+    
+    text-align: center;
+    
+    margin-top: 50px;
+    
+    font-weight: bold;
+    
+    font-size: 20px;
+    
+    text-decoration: underline;
+
+    &:before {
+        content: attr(data-hover);
+    
+        visibility: hidden;
+    
+        opacity: 0;
+    
+        width: 250px;
+    
+        height: 125px;
+    
+        text-align: center;
+    
+        border-radius: 5px;
+    
+        padding: 5px 0;
+    
+        transition: opacity 1s ease-in-out;
+    
+        position: absolute;
+    
+        z-index: 1;
+    
+        left: 0;
+    
+        top: 110%;
+    
+        transform: scale(3.0) translate(-80px) translateY(-120px);
+    
+        color: rgb(241, 98, 241);
+    
+        font-size: 15px;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    
+        background: linear-gradient(#FFF 33.33%, #0039A6 33.33% 66.67%, #D52B1E 66.67%);
+    
+        visibility: visible;
+    }
+}
+
+#ruso {
+    height: 220px;
+
+    width: 320px;
+
+    grid-area: ruso;
+}
+
+.footerIdiomas {
+    position: relative;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translate(-50%);
+
+    display: flex;
+
+    width: 800px;
+}
+
+/* idiomas.html Media queries */
+
+@media only screen  and (max-width: 576px) {
+    .main-idiomas {
+        width: 576px;
+    }
+    .flags {
+        display:block;
+    }
+    .txtIngles:before {
+        transform: scale(1.9) translate(60px) translateY(-120px)
+    }
+    .txtFrances:before {
+        transform: scale(1.9) translate(-120px) translateY(-50px) ;
+    }
+    .txtAleman:before {
+    transform: scale(1.9) translate(-120px) translateY(-120px);
+    }
+    .txtItaliano:before {
+    transform: scale(1.9) translate(-120px) translateY(-60px);
+    }
+    .txtPortugues:before {
+    transform: scale(1.9) translate(-120px) translateY(-120px);
+    }
+    .txtRuso:before {
+    transform: scale(1.9) translate(-120px) translateY(-120px);
+    }
+}

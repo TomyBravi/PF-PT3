@@ -1,10 +1,12 @@
+// Variables //
+
 $color1: #ff0000;
 $color2: crimson;
 $animacion1: scale(1.5) translate(50px);
 $cnt: center;
 $background1: url(../assets/languages.jpg);
 $intro1-fonts:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$intro2-fonts:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$mobile: 576px;
 
 
 * {
@@ -15,17 +17,21 @@ $intro2-fonts:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /* index.html*/
 
+@mixin tamaños($alt, $mgin, $bcolor) {
+    height: $alt;
+    margin: $mgin;
+    background-color: $bcolor;
+}
+
+
 body {
-    height: 100vh;
 
-    background-color: $color2;
-
-    margin: 0;
+    @include tamaños(100vh, 0,$color2 );
 
     position: relative;
 }
 
-header {
+        header {
     background-color: $color1;
 
     padding: 10px;
@@ -64,16 +70,26 @@ header {
         justify-content: $cnt;
     }
 
-    .menu {
+    $mapa1 : (
+
+    25px: red,
+    50px: orange,
+    40px: yellow,
+
+    );
+
+    @each $sizes, $colores in $mapa1 {
+
+    .menu-#{$sizes} {
         text-align: $cnt;
     
         width: 325px;
     
-        height: 25px;
+        height: $sizes;
     
-        margin-top: 50px;
+        margin-top: $sizes;
     
-        margin-bottom: 40px;
+        margin-bottom: $sizes;
     
         padding: 0px;
     
@@ -87,7 +103,7 @@ header {
     }
     
 }
-
+}
 .mainHtml {
     background-image: $background1;
 
@@ -122,13 +138,15 @@ header {
     }
 
     .intro2 {
-        font-family: $intro2-fonts;
+        font-family: $intro1-fonts;
         
         text-align: justify;
         
         margin-top: 30px;
         
         grid-area: text2;
+
+        padding: 15px;
     }
 }
 
@@ -172,10 +190,47 @@ footer {
     }
 }
 
+@media only screen  and (max-width: $mobile) {
+    #navIndex {
+        display: flex;
+        justify-content: $cnt;
+        position: relative;
+    }
+
+    .menu {
+        border: double;
+    }
+
+    .mainHtml {
+        width: $mobile;
+        height: 700px;
+        background-size: cover;
+    }
+
+    .intro1 {
+        font-size: medium;
+    }
+
+    .intro2 {
+        margin-top: 20px;
+        font-size: medium;
+    }
+
+    .footerIndex {
+        position: relative;
+        display: block;
+        height: 50px;
+        width: 572px;
+    }
+    .terminosL {
+        text-align: start;
+    }
+}
+
 /* sobre-nosotros.html */
 
 .sn {
-    background: #d3d3d3;
+    @extend .contacto;
 
     .equipo {
         display: flex;
@@ -194,23 +249,40 @@ footer {
     }
 }
 
-@media only screen  and (max-width: 576px) {
+@media only screen  and (max-width: $mobile) {
     #stockEquipo:hover { 
         transform: translate(-50px) scale(1.1) ;
     }
     .sn {
-        max-width: 576px;
+        max-width: $mobile;
         height: 300px;
     }
+}
+
+.descSN {
+    display: inline;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.subtSN {
+    text-decoration: underline;
+}
+
+.caption {
+    text-align: $cnt;
+    font-weight: bold;
+    font-size: 20px;
+    border:double;
 }
 
 /* clases.html */
 
 .fondo {
-    background-color: #d3d3d3;
+@extend .contacto;
 
     .clases {
-        text-align: center;
+        text-align: $cnt;
     
         text-decoration: underline;
     
@@ -222,7 +294,7 @@ footer {
     
         display: flex;
     
-        justify-content: center;
+        justify-content: $cnt;
     }
 }
 
@@ -237,5 +309,38 @@ footer {
     background-color: #d3d3d3;
 }
 
+.emailT {
+    display: block;
 
+    margin-top: 10px;
+}
 
+.emailP {
+    display: block;
+}
+
+.edad {
+    margin-bottom: 10px;
+}
+
+.selec {
+    margin-bottom: 10px;
+}
+
+.clases-s {
+    display: block;
+}
+
+.botones {
+    margin-top: 20px;
+
+    margin-left: 20px;
+}
+
+.botonesDiv {
+    display: block;
+}
+
+.consulta {
+    margin-bottom: 20px;
+}

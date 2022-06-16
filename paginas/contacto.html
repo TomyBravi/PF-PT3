@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Idiomas, contacto">
+    <meta name="description" content="¡Contáctanos ya y elige tu próximo idioma a aprender!">
+    <title>Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,23 +50,19 @@
 
             <form action="">
 
-                <input type="text" placeholder="Nombre y Apellido"> <br>
+                <input type="text" placeholder="Nombre y Apellido">  <br>
 
-                <label for="email">Email</label>
+                <label for="email" class="emailT">Email</label>
 
-                <input type="email" placeholder="fulanito123@gmail.com"> <br>
+                <input type="email" placeholder="fulanito123@gmail.com" class="emailP"> <br>
 
-                <input type="number" placeholder="Edad" min="3" max="100">
-
-                <input type="submit" value="Enviar"><br>
-
-                <input type="reset" value="Reiniciar">
+                <input type="number" placeholder="Edad" min="3" max="100" class="edad">
 
             </form>
 
             <label for="select">Selecciona el idioma a aprender</label>
 
-            <select name="select" id="">
+            <select name="select" id="" class="selec">
 
                 <option value="ingles">Inglés</option>
 
@@ -79,10 +77,10 @@
                 <option value="ruso">Ruso</option>
 
             </select>
-            <!-- no se si está bien hacer otro form o si los botones de radio podrían ir en el form de arriba -->
+
             <form action="">
 
-                <label for="clases-s">Clases semanales</label>
+                <label for="clases-s" class="clases-s">Clases semanales</label>
 
                 <input type="radio" name="clases-s" value="1">
 
@@ -107,7 +105,21 @@
                 <li>$1300</li>
 
             </ol>
-            <!-- lo mismo que arriba, de momento voy a usarlos así a los form -->
+
+            <form action="">
+
+                <textarea name="mensaje" id="" cols="30" rows="10"
+                placeholder="Para dudas/consultas dejanos un mensaje" class="consulta"></textarea>
+
+                <div class="botonesDiv">
+
+                    <input type="submit" value="Enviar" class="botones">
+
+                    <input type="reset" value="Reiniciar" class="botones">
+
+                </div>
+            </form>
+
             <form action="">
 
                 <label for="pago">Métodos de pago</label>
@@ -130,12 +142,9 @@
 
                 <label for="ccn">Credit Card Number:</label>
 
-                <!-- las dos siguientes lineas de codigo las saque de: https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers?msclkid=e6291122c00c11ec8628ed645d87db9d  porque estaba en duda sobre que poner si type text o number y como hacer para simular que se introduce un número de tarjeta-->
+                <!-- las dos siguientes lineas de codigo las saque de: https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers?msclkid=e6291122c00c11ec8628ed645d87db9d -->
                 <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
                     maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
-
-                <textarea name="mensaje" id="" cols="30" rows="10"
-                placeholder="Para dudas/consultas dejanos un mensaje"></textarea>
 
             </form>
 
@@ -143,7 +152,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footerContacto">
 
         <h3 class="terminos">Términos y Condiciones</h3>
 

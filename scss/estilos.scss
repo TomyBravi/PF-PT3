@@ -1,7 +1,7 @@
 // Variables //
 
 $color1: #ff0000;
-$color2: crimson;
+$color2: #dc143c;
 $animacion1: scale(1.5) translate(50px);
 $cnt: center;
 $background1: url(../assets/languages.jpg);
@@ -17,16 +17,18 @@ $mobile: 576px;
 
 /* index.html*/
 
-@mixin tamaños($alt, $mgin, $bcolor) {
+@mixin medidas($alt, $mgin, $bcolor) {
     height: $alt;
+
     margin: $mgin;
+    
     background-color: $bcolor;
 }
 
 
 body {
 
-    @include tamaños(100vh, 0,$color2 );
+    @include medidas(100vh, 0,$color2 );
 
     position: relative;
 }
@@ -70,15 +72,17 @@ body {
         justify-content: $cnt;
     }
 
-    $mapa1 : (
+    $size-color : (
 
-    25px: red,
-    50px: orange,
-    40px: yellow,
+    25px: #ff0000,
+
+    50px: #ffa500,
+
+    40px: #ffff00,
 
     );
 
-    @each $sizes, $colores in $mapa1 {
+    @each $sizes, $colores in $size-color {
 
     .menu-#{$sizes} {
         text-align: $cnt;
@@ -117,10 +121,11 @@ body {
 
     grid-template-rows: 150px 200px 200px ;
 
-    grid-gap: 120px 100px;
+    grid-gap: 60px 100px;
 
     grid-template-areas: "text1 text1 text1 text1"
         "text2 text2 text2 text2"
+        "text3 text3 text3 text3"
         "terminos terminos terminos terminos" ;
 
     .intro1 {
@@ -135,6 +140,8 @@ body {
         padding: 15px;
         
         grid-area: text1;
+
+        font-size: 25px;
     }
 
     .intro2 {
@@ -147,7 +154,39 @@ body {
         grid-area: text2;
 
         padding: 15px;
+
+        font-size: 25px;
+
+        margin-top: 100px;
     }
+
+    .intro2Ul {
+        grid-area: text3;
+
+        font-size: 20px;
+    }
+
+    .decisiones {
+        text-decoration: underline;
+    
+        font-weight: bold;
+    }
+
+    .memoria {
+        text-decoration: underline;
+    
+        font-weight: bold;
+    }
+
+    .enfermedades {
+        text-decoration: underline;
+        
+        font-weight: bold;
+    }
+}
+
+.footerIndex {
+    bottom: auto;
 }
 
 footer {
@@ -191,9 +230,11 @@ footer {
 }
 
 @media only screen  and (max-width: $mobile) {
-    #navIndex {
+    .navIndex {
         display: flex;
+
         justify-content: $cnt;
+
         position: relative;
     }
 
@@ -203,7 +244,9 @@ footer {
 
     .mainHtml {
         width: $mobile;
+
         height: 700px;
+
         background-size: cover;
     }
 
@@ -213,13 +256,17 @@ footer {
 
     .intro2 {
         margin-top: 20px;
+
         font-size: medium;
     }
 
     .footerIndex {
         position: relative;
+
         display: block;
+
         height: 50px;
+
         width: 572px;
     }
     .terminosL {
@@ -239,7 +286,7 @@ footer {
     
         justify-content: right;
 
-        #stockEquipo {
+        .stockEquipo {
             transition: 1.5s;
 
             &:hover {
@@ -250,18 +297,22 @@ footer {
 }
 
 @media only screen  and (max-width: $mobile) {
-    #stockEquipo:hover { 
+    .stockEquipo:hover { 
         transform: translate(-50px) scale(1.1) ;
     }
+
     .sn {
         max-width: $mobile;
+
         height: 300px;
     }
 }
 
 .descSN {
     display: inline;
+
     font-size: 20px;
+    
     margin-top: 30px;
 }
 
@@ -271,8 +322,11 @@ footer {
 
 .caption {
     text-align: $cnt;
+
     font-weight: bold;
+
     font-size: 20px;
+
     border:double;
 }
 

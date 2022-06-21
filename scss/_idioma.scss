@@ -84,10 +84,12 @@
     }
 }
 
-#ingles {
+.ingles {
     width: 320px;
 
     grid-area: ingles;
+    
+    height: 220px;
 }
 
 .txtFrances {
@@ -142,13 +144,13 @@
     &:hover:before {
         opacity: 1;
 
-        background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
+        background: linear-gradient(to right, #0000ff 33%, #ffffff 33%, #ffffff 66%,#ff0000ed 66%);
 
         visibility: visible;
     }
 }
 
-#frances {
+.frances {
     height: 220px;
 
     width: 320px;
@@ -214,7 +216,7 @@
     }
 }
 
-#aleman {
+.aleman {
     height: 220px;
 
     width: 320px;
@@ -274,13 +276,13 @@
     &:hover:before {
         opacity: 1;
     
-        background:linear-gradient(to right, green 33%, white 33%, white 66%, red 66%);
+        background:linear-gradient(to right, #008000 33%, #ffffff 33%, #ffffff 66%, #ff0000 66%);
     
         visibility: visible;
     }
 }
 
-#italiano {
+.italiano {
     height: 220px;
 
     width: 320px;
@@ -350,7 +352,7 @@
     }
 }
 
-#portugues {
+.portugues {
     width: 320px;
 
     grid-area: portugues;
@@ -414,7 +416,7 @@
     }
 }
 
-#ruso {
+.ruso {
     height: 220px;
 
     width: 320px;
@@ -442,24 +444,31 @@
     .main-idiomas {
         width: 576px;
     }
+
     .flags {
         display:block;
     }
+
     .txtIngles:before {
         transform: scale(1.9) translate(60px) translateY(-120px)
     }
+
     .txtFrances:before {
         transform: scale(1.9) translate(-120px) translateY(-50px) ;
     }
+
     .txtAleman:before {
     transform: scale(1.9) translate(-120px) translateY(-120px);
     }
+
     .txtItaliano:before {
     transform: scale(1.9) translate(-120px) translateY(-60px);
     }
+
     .txtPortugues:before {
     transform: scale(1.9) translate(-120px) translateY(-120px);
     }
+    
     .txtRuso:before {
     transform: scale(1.9) translate(-120px) translateY(-120px);
     }

@@ -22,19 +22,21 @@ header .logo {
   transition: 1.2s;
 }
 header .logo:hover {
-  transform: scale(1.5) translate(50px);
+  transform: scale(1.8) translatex(200px) translatey(50px);
 }
 header h1 {
   height: 50px;
   text-align: center;
-  border-style: dashed;
-  margin-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 5px;
   text-decoration: underline;
   border-width: 5px;
 }
 header .navbar {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 header .menu-25px {
   text-align: center;
@@ -93,7 +95,7 @@ header li {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 15px;
   grid-area: text1;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .mainHtml .intro2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -101,12 +103,12 @@ header li {
   margin-top: 30px;
   grid-area: text2;
   padding: 15px;
-  font-size: 25px;
+  font-size: 1.5em;
   margin-top: 100px;
 }
 .mainHtml .intro2Ul {
   grid-area: text3;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .mainHtml .decisiones {
   text-decoration: underline;
@@ -165,11 +167,11 @@ footer .redes {
     background-size: cover;
   }
   .intro1 {
-    font-size: medium;
+    font-size: 1.3em;
   }
   .intro2 {
     margin-top: 20px;
-    font-size: medium;
+    font-size: 1.3em;
   }
   .footerIndex {
     position: relative;
@@ -205,7 +207,7 @@ footer .redes {
 }
 .descSN {
   display: inline;
-  font-size: 20px;
+  font-size: 1.25em;
   margin-top: 30px;
 }
 
@@ -216,7 +218,7 @@ footer .redes {
 .caption {
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   border: double;
 }
 

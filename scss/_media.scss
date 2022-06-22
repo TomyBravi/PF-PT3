@@ -1,0 +1,77 @@
+@media only screen  and (max-width: $mobile) {
+    #navIndex {
+        display: flex;
+        justify-content: $cnt;
+        position: relative;
+    }
+
+    .menu {
+        border: double;
+    }
+
+    .mainHtml {
+        width: $mobile;
+        height: 700px;
+        background-size: cover;
+    }
+
+    .intro1 {
+        font-size: medium;
+    }
+
+    .intro2 {
+        margin-top: 20px;
+        font-size: medium;
+    }
+
+    .footerIndex {
+        position: relative;
+        display: block;
+        height: 50px;
+        width: 572px;
+    }
+    .terminosL {
+        text-align: start;
+    }
+}
+
+/* Sobre nosotros */
+
+@media only screen  and (max-width: $mobile) {
+    #stockEquipo:hover { 
+        transform: translate(-50px) scale(1.1) ;
+    }
+    .sn {
+        max-width: $mobile;
+        height: 300px;
+    }
+}
+
+/* Idiomas */
+
+@media only screen  and (max-width: 576px) {
+    .main-idiomas {
+        width: 576px;
+    }
+    .flags {
+        display:block;
+    }
+    .txtIngles:before {
+        transform: scale(1.9) translate(60px) translateY(-120px)
+    }
+    .txtFrances:before {
+        transform: scale(1.9) translate(-120px) translateY(-50px) ;
+    }
+    .txtAleman:before {
+    transform: scale(1.9) translate(-120px) translateY(-120px);
+    }
+    .txtItaliano:before {
+    transform: scale(1.9) translate(-120px) translateY(-60px);
+    }
+    .txtPortugues:before {
+    transform: scale(1.9) translate(-120px) translateY(-120px);
+    }
+    .txtRuso:before {
+    transform: scale(1.9) translate(-120px) translateY(-120px);
+    }
+}

@@ -21,7 +21,7 @@
 
         <img src="../assets/logo.png" alt="LanguageLearningExperiencelogo" class="logo">
 
-        <h1>Contacto</h1>
+        <h1>Contactanos para aprender tu siguiente idioma!</h1>
 
         <nav class="navbar navContacto">
 
@@ -47,11 +47,11 @@
 
         <section class="contacto">
 
-            <h2 class="h2C">Contactanos</h2>
+            <h2 class="h2C">Contacto</h2>
 
             <form action="">
 
-                <input type="text" placeholder="Nombre y Apellido">  <br>
+                <input type="text" placeholder="Nombre y Apellido" class="nombre">  <br>
 
                 <label for="email" class="emailT">Email</label>
 
@@ -61,9 +61,9 @@
 
             </form>
 
-            <label for="select">Selecciona el idioma a aprender</label>
+            <label for="select" class="selecT">Selecciona el idioma a aprender</label>
 
-            <select name="select" id="" class="selec">
+            <select name="select" class="selec">
 
                 <option value="ingles">Inglés</option>
 
@@ -83,7 +83,7 @@
 
                 <label for="clases-s" class="clases-s">Clases semanales</label>
 
-                <input type="radio" name="clases-s" value="1">
+                <input type="radio" name="clases-s" value="1" class="uno">
 
                 <label for="1">1</label>
 
@@ -97,11 +97,11 @@
 
             </form>
 
-            <ol>
+            <ol class="precios">
 
-                <li>$500</li>
+                <li class="primerPrecio">$500</li>
 
-                <li>$900</li>
+                <li class="segundoPrecio">$900</li>
 
                 <li>$1300</li>
 
@@ -112,21 +112,15 @@
                 <textarea name="mensaje" id="" cols="30" rows="10"
                 placeholder="Para dudas/consultas dejanos un mensaje" class="consulta"></textarea>
 
-                <div class="botonesDiv">
-
-                    <input type="submit" value="Enviar" class="botones">
-
-                    <input type="reset" value="Reiniciar" class="botones">
-
-                </div>
-
             </form>
 
             <form action="">
 
-                <label for="pago">Métodos de pago</label>
+                <label for="pago" class="pago">Métodos de pago</label>
 
-                <input type="radio" name="pago" value="credito">
+                <div class="metodos">
+
+                <input type="radio" name="pago" value="credito" class="metodo">
 
                 <label for="credito">Tarjeta de crédito</label>
 
@@ -138,16 +132,26 @@
 
                 <label for="paypal">Paypal</label>
 
-                <input type="radio" name="pago" value="mercado">
+                <input type="radio" name="pago" value="mercado" class="mercadoPago">
 
                 <label for="mercado">Mercado Pago</label>
 
-                <label for="ccn">Credit Card Number:</label>
+                </div>
+
+                <label for="ccn" class="numT">Número de la Tarjeta:</label>
 
                 <!-- las dos siguientes lineas de codigo las saque de: https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers?msclkid=e6291122c00c11ec8628ed645d87db9d -->
                 <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
 
             </form>
+
+            <div class="botonesDiv">
+
+                <input type="submit" value="Enviar" class="botones">
+
+                <input type="reset" value="Reiniciar" class="botones">
+
+            </div>
 
         </section>
 

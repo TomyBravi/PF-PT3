@@ -163,15 +163,16 @@ footer .redes {
   height: 40em;
 }
 .sn .equipo {
-  display: flex;
+  display: inline;
   position: relative;
   justify-content: right;
 }
 .sn .equipo .stockEquipo {
   transition: 1.5s;
+  margin-left: 19em;
 }
 .sn .equipo .stockEquipo:hover {
-  transform: translate(-25em) scale(1.3);
+  transform: translate(-5em) scale(1.3);
 }
 
 .descSN {
@@ -200,6 +201,11 @@ footer .redes {
   width: 20em;
 }
 
+.textoVideo {
+  text-align: center;
+  margin-top: 1em;
+}
+
 .fondo .clases {
   text-align: center;
   text-decoration: underline;
@@ -210,6 +216,10 @@ footer .redes {
   margin-top: 3.125em;
   display: flex;
   justify-content: center;
+}
+
+.footerClases {
+  background-color: #F9C74F;
 }
 
 /* idiomas.html */
@@ -503,25 +513,59 @@ footer .redes {
   color: #277DA1;
 }
 
+.nombre {
+  margin-left: 33em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
 .emailT {
   display: block;
   margin-top: 0.625em;
+  text-align: center;
 }
 
 .emailP {
   display: block;
+  margin-left: 33em;
 }
 
 .edad {
-  margin-bottom: 0.625em;
+  margin-bottom: 2em;
+  margin-left: 33em;
+}
+
+.selecT {
+  display: block;
+  text-align: center;
 }
 
 .selec {
   margin-bottom: 0.625em;
+  margin-left: 33em;
+  margin-top: 0.5em;
 }
 
 .clases-s {
   display: block;
+  text-align: center;
+}
+
+.uno {
+  margin-left: 35em;
+}
+
+.precios {
+  display: flex;
+  margin-left: 33em;
+}
+
+.primerPrecio {
+  margin-right: 1.5em;
+}
+
+.segundoPrecio {
+  margin-right: 1.5em;
 }
 
 .botones {
@@ -531,10 +575,31 @@ footer .redes {
 
 .botonesDiv {
   display: block;
+  margin-left: 33em;
+  margin-bottom: 2em;
 }
 
 .consulta {
   margin-bottom: 1.25em;
+  margin-left: 32em;
+}
+
+.metodo {
+  margin-left: 25em;
+}
+
+.pago {
+  display: block;
+  text-align: center;
+}
+
+.numT {
+  display: block;
+  text-align: center;
+}
+
+#ccn {
+  margin-left: 33em;
 }
 
 .footerContacto {
@@ -542,10 +607,16 @@ footer .redes {
 }
 
 /* Media queries */
+/* index */
 @media only screen and (min-width: 480px) and (max-width: 576px) {
   body {
     background-color: #F9C74F;
-    height: 4.375em;
+  }
+  .logo {
+    transition: 0.8s;
+  }
+  .logo:hover {
+    transform: scale(0.5) translatex(0.5em) translatey(1.125em);
   }
   .navIndex {
     display: flex;
@@ -561,13 +632,12 @@ footer .redes {
     width: 576px;
     height: 43.75em;
     background-size: cover;
+    display: inline;
   }
   .intro1 {
     font-size: 1.3em;
-    margin-bottom: 1.25em;
   }
   .intro2 {
-    margin: 1.25em;
     font-size: 1.3em;
   }
   .intro2Ul {
@@ -576,7 +646,7 @@ footer .redes {
   }
   .footerIndex {
     position: relative;
-    display: block;
+    display: inline-block;
     height: 3.125em;
     width: 35.75em;
   }
@@ -585,20 +655,34 @@ footer .redes {
   }
 }
 /* Sobre nosotros */
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 480px) and (max-width: 576px) {
   .stockEquipo:hover {
-    transform: translate(-3.125em) scale(1.1);
+    transform: translate(-0.125em) scale(0.1);
+  }
+  .stockEquipo {
+    width: 80%;
+    margin-left: auto;
+  }
+  .navSN {
+    margin-bottom: 2em;
+    margin-left: 2em;
+  }
+  .subtSN {
+    margin-bottom: 1em;
   }
   .sn {
     max-width: 576px;
-    height: 18.75em;
+    height: 15.75em;
+  }
+  .footerSN {
+    position: relative;
+    bottom: -20em;
+    left: auto;
+    display: inline;
   }
 }
 /* Idiomas */
-@media only screen and (max-width: 576px) {
-  .main-idiomas {
-    width: 576px;
-  }
+@media only screen and (min-width: 480px) and (max-width: 576px) {
   .flags {
     display: block;
   }
@@ -619,6 +703,92 @@ footer .redes {
   }
   .txtRuso::before {
     transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
+  }
+}
+/* Clases */
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  .navClases {
+    margin-bottom: 2em;
+    margin-left: 2em;
+  }
+  .footerClases {
+    position: relative;
+    bottom: -2em;
+    left: auto;
+    display: inline;
+  }
+}
+/* Contacto */
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  .navContacto {
+    margin-bottom: 2em;
+    margin-left: 2em;
+  }
+  .footerContacto {
+    position: relative;
+    bottom: -2em;
+    left: auto;
+    display: inline;
+  }
+  .nombre {
+    margin-left: 8em;
+    margin-top: 1em;
+  }
+  .emailT {
+    text-align: center;
+  }
+  .emailP {
+    margin-left: 8em;
+  }
+  .edad {
+    margin-left: 12em;
+    margin-bottom: 1.5em;
+  }
+  .selecT {
+    display: block;
+    text-align: center;
+  }
+  .selec {
+    margin-left: 11em;
+  }
+  .clases-s {
+    text-align: center;
+  }
+  .uno {
+    margin-left: 12em;
+  }
+  .precios {
+    display: flex;
+    margin-left: 10em;
+  }
+  .primerPrecio {
+    margin-right: 1.5em;
+  }
+  .segundoPrecio {
+    margin-right: 1.5em;
+  }
+  .consulta {
+    margin-left: 8em;
+  }
+  .botonesDiv {
+    margin-left: 9em;
+    margin-bottom: 2em;
+  }
+  .metodos {
+    display: block;
+  }
+  .metodo {
+    margin-left: 3em;
+  }
+  .mercadoPago {
+    margin-left: 10em;
+  }
+  .pago {
+    display: block;
+    text-align: center;
+  }
+  #ccn {
+    margin-left: 10em;
   }
 }
 

@@ -7,104 +7,96 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: #dc143c;
+  background-color: #f3722c;
   position: relative;
 }
 
 header {
-  background-color: #ff0000;
-  padding: 10px;
-  margin-bottom: -20px;
+  background-color: #f94144;
+  padding: 0.6em;
+  margin-bottom: -1.25em;
 }
 header .logo {
-  width: 300px;
+  width: 18.75em;
   display: flex;
   transition: 1.2s;
 }
 header .logo:hover {
-  transform: scale(1.8) translatex(200px) translatey(50px);
+  transform: scale(1.8) translatex(12.5em) translatey(3.125em);
 }
 header h1 {
-  height: 50px;
+  height: 3.1em;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
   text-decoration: underline;
-  border-width: 5px;
+  border-width: 0.3em;
 }
 header .navbar {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
+  justify-content: baseline;
+  border: double;
+  width: 24em;
 }
 header .menu-25px {
   text-align: center;
-  width: 325px;
+  width: 5em;
   height: 25px;
   margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 0px;
-  border: double;
   list-style: none;
 }
 header li {
   display: inline-block;
+  border-right: 1px solid;
 }
 header .menu-50px {
   text-align: center;
-  width: 325px;
+  width: 5em;
   height: 50px;
   margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0px;
-  border: double;
   list-style: none;
 }
 header li {
   display: inline-block;
+  border-right: 1px solid;
 }
 header .menu-40px {
   text-align: center;
-  width: 325px;
+  width: 5em;
   height: 40px;
   margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 0px;
-  border: double;
   list-style: none;
 }
 header li {
   display: inline-block;
+  border-right: 1px solid;
 }
 
 .mainHtml {
-  background-image: url(../assets/languages.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: #f3722c;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 200px 200px;
-  grid-gap: 60px 100px;
+  grid-template-rows: 9.375em 12.5em 12.5em;
+  grid-gap: 3.75em 6.25em;
   grid-template-areas: "text1 text1 text1 text1" "text2 text2 text2 text2" "text3 text3 text3 text3" "terminos terminos terminos terminos";
 }
 .mainHtml .intro1 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   text-align: justify;
-  margin-top: 20px;
+  margin-top: 1.25em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 15px;
+  padding: 0.9375em;
   grid-area: text1;
   font-size: 1.5em;
 }
 .mainHtml .intro2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: justify;
-  margin-top: 30px;
+  margin-top: 1.875em;
   grid-area: text2;
-  padding: 15px;
+  padding: 0.9375em;
   font-size: 1.5em;
-  margin-top: 100px;
+  margin-top: 6.25em;
 }
 .mainHtml .intro2Ul {
   grid-area: text3;
@@ -133,14 +125,15 @@ footer {
   left: 50%;
   transform: translate(-50%);
   display: flex;
-  width: 800px;
-  background-color: #ff0000;
+  width: 76em;
+  padding: 1em;
+  background-color: #f8961e;
 }
 footer .terminos {
   text-align: center;
   font-weight: bold;
   font-style: oblique;
-  margin-left: 50px;
+  margin-left: 3.125em;
   grid-area: terminos;
 }
 footer .terminosL {
@@ -163,21 +156,21 @@ footer .redes {
   }
   .mainHtml {
     width: 576px;
-    height: 700px;
+    height: 43.75em;
     background-size: cover;
   }
   .intro1 {
     font-size: 1.3em;
   }
   .intro2 {
-    margin-top: 20px;
+    margin-top: 1.25em;
     font-size: 1.3em;
   }
   .footerIndex {
     position: relative;
     display: block;
-    height: 50px;
-    width: 572px;
+    height: 3.125em;
+    width: 35.75em;
   }
   .terminosL {
     text-align: start;
@@ -193,22 +186,22 @@ footer .redes {
   transition: 1.5s;
 }
 .sn .equipo .stockEquipo:hover {
-  transform: translate(-400px) scale(1.3);
+  transform: translate(-25em) scale(1.3);
 }
 
 @media only screen and (max-width: 576px) {
   .stockEquipo:hover {
-    transform: translate(-50px) scale(1.1);
+    transform: translate(-3.125em) scale(1.1);
   }
   .sn {
     max-width: 576px;
-    height: 300px;
+    height: 18.75em;
   }
 }
 .descSN {
   display: inline;
   font-size: 1.25em;
-  margin-top: 30px;
+  margin-top: 1.875em;
 }
 
 .subtSN {
@@ -226,10 +219,10 @@ footer .redes {
 .fondo .clases {
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 .fondo .video {
-  margin-top: 50px;
+  margin-top: 3.125em;
   display: flex;
   justify-content: center;
 }
@@ -237,14 +230,14 @@ footer .redes {
 /* idiomas.html */
 .flags {
   width: 100%;
-  min-height: 400px;
+  min-height: 25em;
   background-color: #ffa500;
   background-image: linear-gradient(#ff9900, #ff5e00);
-  padding: 20px;
+  padding: 1.25em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 150px 200px 200px 100px;
-  grid-gap: 120px 100px;
+  grid-template-rows: 9.375em 12.5em 12.5em 6.25em;
+  grid-gap: 7.5em 6.25em;
   grid-template-areas: "text1 ingles text2 frances" "text3 aleman text4 italiano" "text5 portugues text6 ruso";
 }
 
@@ -256,77 +249,77 @@ footer .redes {
   grid-area: text1;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: underline;
 }
-.txtIngles:before {
+.txtIngles::before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 250px;
-  height: 125px;
+  width: 15.625em;
+  height: 7.8125em;
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
   z-index: 1;
   left: 0;
   top: 110%;
-  background: linear-gradient(180deg, transparent, transparent 44px, #c8102e 44px, #c8102e 66px, transparent 66px, transparent 100%), linear-gradient(90deg, transparent, transparent 99px, #c8102e 99px, #c8102e 121px, transparent 121px, transparent 100%), linear-gradient(180deg, transparent, transparent 37px, #FFF 37px, #FFF 73px, transparent 73px, transparent 100%), linear-gradient(90deg, transparent, transparent 92px, #FFF 92px, #FFF 128px, transparent 128px, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 0/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 0/110px 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 55px/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 55px/110px 100% no-repeat, linear-gradient(27deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), linear-gradient(153deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), #012169;
-  transform: scale(3) translate(150px) translateY(-50px);
+  background: linear-gradient(180deg, transparent, transparent 2.75em, #c8102e 2.75em, #c8102e 4.125em, transparent 4.125em, transparent 100%), linear-gradient(90deg, transparent, transparent 6.1875em, #c8102e 6.1875em, #c8102e 7.5625em, transparent 7.5625em, transparent 100%), linear-gradient(180deg, transparent, transparent 2.3125em, #FFF 2.3125em, #FFF 4.5625em, transparent 4.5625em, transparent 100%), linear-gradient(90deg, transparent, transparent 5.75em, #FFF 5.75em, #FFF 8em, transparent 8em, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 5.6875em, #c8102e 5.6875em, #c8102e 6.125em, transparent 6.125em, transparent 100%) 0 0/6.875em 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 6.125em, #c8102e 6.125em, #c8102e 6.625em, transparent 6.625em, transparent 100%) 6.875em 0/6.875em 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 6.125em, #c8102e 6.125em, #c8102e 6.625em, transparent 6.625em, transparent 100%) 6.875em 3.4375em/6.875em 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 5.6875em, #c8102e 5.6875em, #c8102e 6.125em, transparent 6.125em, transparent 100%) 0 3.4375em/6.875em 100% no-repeat, linear-gradient(27deg, transparent, transparent 5.4375em, #FFF 5.4375em, #FFF 6.8125em, transparent 6.8125em, transparent 100%), linear-gradient(153deg, transparent, transparent 5.4375em, #FFF 5.4375em, #FFF 6.8125em, transparent 6.8125em, transparent 100%), #012169;
+  transform: scale(3) translate(9.375em) translateY(-3.125em);
   color: #008000;
-  font-size: 15px;
+  font-size: 0.9375em;
 }
-.txtIngles:hover:before {
+.txtIngles:hover::before {
   opacity: 1;
   visibility: visible;
 }
 
 .ingles {
-  width: 320px;
+  width: 20em;
   grid-area: ingles;
-  height: 220px;
+  height: 13.75em;
 }
 
 .txtFrances {
   grid-area: text2;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: underline;
 }
-.txtFrances:before {
+.txtFrances::before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 250px;
-  height: 125px;
+  width: 15.625em;
+  height: 7.8125em;
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
   z-index: 1;
   left: 0;
   top: 110%;
-  transform: scale(3) translate(-80px) translateY(-50px);
+  transform: scale(3) translate(-5em) translateY(-3.125em);
   color: #008000;
-  font-size: 15px;
+  font-size: 0.9375em;
 }
-.txtFrances:hover:before {
+.txtFrances:hover::before {
   opacity: 1;
   background: linear-gradient(to right, #0000ff 33%, #ffffff 33%, #ffffff 66%, rgba(255, 0, 0, 0.9294117647) 66%);
   visibility: visible;
 }
 
 .frances {
-  height: 220px;
-  width: 320px;
+  height: 13.75em;
+  width: 20em;
   grid-area: frances;
 }
 
@@ -334,38 +327,38 @@ footer .redes {
   grid-area: text3;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: underline;
 }
-.txtAleman:before {
+.txtAleman::before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 250px;
-  height: 125px;
+  width: 15.625em;
+  height: 7.8125em;
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
   z-index: 1;
   left: 0;
   top: 110%;
-  transform: scale(3) translate(170px) translateY(-60px);
+  transform: scale(3) translate(170px) translateY(-3.75em);
   color: #008000;
-  font-size: 14px;
+  font-size: 0.875em;
 }
-.txtAleman:hover:before {
+.txtAleman:hover::before {
   opacity: 1;
   background: linear-gradient(#000 33.333%, #FF0000 33.33% 66.666%, #FFCC00 66.666%);
   visibility: visible;
 }
 
 .aleman {
-  height: 220px;
-  width: 320px;
+  height: 13.75em;
+  width: 20em;
   grid-area: aleman;
 }
 
@@ -373,38 +366,38 @@ footer .redes {
   grid-area: text4;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: underline;
 }
-.txtItaliano:before {
+.txtItaliano::before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 250px;
-  height: 125px;
+  width: 15.625em;
+  height: 7.8125em;
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
   z-index: 1;
   left: 0;
   top: 110%;
-  transform: scale(3) translate(-90px) translateY(-60px);
+  transform: scale(3) translate(-90px) translateY(-3.75em);
   color: rgb(241, 98, 241);
-  font-size: 15px;
+  font-size: 0.9375em;
 }
-.txtItaliano:hover:before {
+.txtItaliano:hover::before {
   opacity: 1;
   background: linear-gradient(to right, #008000 33%, #ffffff 33%, #ffffff 66%, #ff0000 66%);
   visibility: visible;
 }
 
 .italiano {
-  height: 220px;
-  width: 320px;
+  height: 13.75em;
+  width: 20em;
   grid-area: italiano;
 }
 
@@ -412,30 +405,30 @@ footer .redes {
   grid-area: text5;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: underline;
 }
-.txtPortugues:before {
+.txtPortugues::before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 250px;
-  height: 125px;
+  width: 15.625em;
+  height: 7.8125em;
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
   z-index: 1;
   left: 0;
   top: 110%;
-  transform: scale(3) translate(170px) translateY(-120px);
+  transform: scale(3) translate(170px) translateY(-7.5em);
   color: rgb(241, 98, 241);
-  font-size: 11px;
+  font-size: 0.6875em;
 }
-.txtPortugues:hover:before {
+.txtPortugues:hover::before {
   opacity: 1;
   background-image: url(../assets/portuguese.png);
   background-size: cover;
@@ -444,7 +437,7 @@ footer .redes {
 }
 
 .portugues {
-  width: 320px;
+  width: 13.75em;
   grid-area: portugues;
 }
 
@@ -452,38 +445,38 @@ footer .redes {
   grid-area: text6;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 3.125em;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25em;
   text-decoration: underline;
 }
-.txtRuso:before {
+.txtRuso::before {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 250px;
-  height: 125px;
+  width: 15.625em;
+  height: 7.8125em;
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
   z-index: 1;
   left: 0;
   top: 110%;
-  transform: scale(3) translate(-80px) translateY(-120px);
+  transform: scale(3) translate(-5em) translateY(-7.5em);
   color: rgb(241, 98, 241);
   font-size: 11px;
 }
-.txtRuso:hover:before {
+.txtRuso:hover::before {
   opacity: 1;
   background: linear-gradient(#FFF 33.33%, #0039A6 33.33% 66.67%, #D52B1E 66.67%);
   visibility: visible;
 }
 
 .ruso {
-  height: 220px;
-  width: 320px;
+  height: 13.75em;
+  width: 20em;
   grid-area: ruso;
 }
 
@@ -493,7 +486,7 @@ footer .redes {
   left: 50%;
   transform: translate(-50%);
   display: flex;
-  width: 800px;
+  width: 50em;
 }
 
 /* idiomas.html Media queries */
@@ -504,23 +497,23 @@ footer .redes {
   .flags {
     display: block;
   }
-  .txtIngles:before {
-    transform: scale(1.9) translate(60px) translateY(-120px);
+  .txtIngles::before {
+    transform: scale(1.9) translate(3.75em) translateY(-7.5em);
   }
-  .txtFrances:before {
-    transform: scale(1.9) translate(-120px) translateY(-50px);
+  .txtFrances::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-3.125em);
   }
-  .txtAleman:before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+  .txtAleman::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
   }
-  .txtItaliano:before {
-    transform: scale(1.9) translate(-120px) translateY(-60px);
+  .txtItaliano::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-3.75em);
   }
-  .txtPortugues:before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+  .txtPortugues::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
   }
-  .txtRuso:before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+  .txtRuso::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
   }
 }
 /* contacto.html */
@@ -530,7 +523,7 @@ footer .redes {
 
 .emailT {
   display: block;
-  margin-top: 10px;
+  margin-top: 0.625em;
 }
 
 .emailP {
@@ -538,11 +531,11 @@ footer .redes {
 }
 
 .edad {
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .selec {
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .clases-s {
@@ -550,8 +543,8 @@ footer .redes {
 }
 
 .botones {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 1.25em;
+  margin-left: 1.25em;
 }
 
 .botonesDiv {
@@ -559,7 +552,7 @@ footer .redes {
 }
 
 .consulta {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 /*# sourceMappingURL=estilos.css.map */

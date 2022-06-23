@@ -1,8 +1,9 @@
 // Variables //
 
-$color1: #ff0000;
-$color2: #dc143c;
-$animacion1: scale(1.8) translatex(200px) translatey(50px);
+$color1: #f94144;
+$color2: #f3722c;
+$color3: #f8961e;
+$animacion1: scale(1.8) translatex(12.5em) translatey(3.125em);
 $cnt: center;
 $background1: url(../assets/languages.jpg);
 $intro1-fonts:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,12 +40,12 @@ body {
     header {
     background-color: $color1;
 
-    padding: 10px;
+    padding: 0.6em;
 
-    margin-bottom: -20px;
+    margin-bottom: -1.25em;
 
     .logo {
-        width: 300px;
+        width: 18.75em;
     
         display: flex;
     
@@ -56,27 +57,27 @@ body {
     }
 
     h1 {
-        height: 50px;
+        height: 3.1em;
     
         text-align: $cnt;
 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
-        margin-bottom: 10px;
+        margin-bottom: 0.3em;
 
-        margin-top: 5px;
+        margin-top: 0.3em;
     
         text-decoration: underline;
     
-        border-width: 5px;
+        border-width: 0.3em;
     }
 
     .navbar {
-        display: flex;
-    
-        justify-content: $cnt;
+        justify-content: baseline;
 
-        padding-bottom: 10px;
+        border:  double;
+
+        width: 24em;    
     }
 
     $size-color : (
@@ -94,41 +95,32 @@ body {
     .menu-#{$sizes} {
         text-align: $cnt;
     
-        width: 325px;
+        width: 5em;
     
         height: $sizes;
     
         margin-top: $sizes;
-    
-        margin-bottom: $sizes;
-    
-        padding: 0px;
-    
-        border: double;
     
         list-style: none;
     }
 
     li {
         display: inline-block;
+
+        border-right: 1px solid;
     }
-    
 }
 }
 .mainHtml {
-    background-image: $background1;
-
-    background-repeat: no-repeat;
-
-    background-size:contain;
+    background-color: $color2;
 
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
 
-    grid-template-rows: 150px 200px 200px ;
+    grid-template-rows:  9.375em 12.5em 12.5em ;
 
-    grid-gap: 60px 100px;
+    grid-gap: 3.75em 6.25em;
 
     grid-template-areas: "text1 text1 text1 text1"
         "text2 text2 text2 text2"
@@ -136,15 +128,15 @@ body {
         "terminos terminos terminos terminos" ;
 
     .intro1 {
-        margin-bottom: 20px;
+        margin-bottom: 1.25em;
         
         text-align: justify;
         
-        margin-top: 20px;
+        margin-top: 1.25em;
         
         font-family: $intro1-fonts;
         
-        padding: 15px;
+        padding: 0.9375em;
         
         grid-area: text1;
 
@@ -156,15 +148,15 @@ body {
         
         text-align: justify;
         
-        margin-top: 30px;
+        margin-top: 1.875em;
         
         grid-area: text2;
 
-        padding: 15px;
+        padding: 0.9375em;
 
         font-size: $f-size1;
 
-        margin-top: 100px;
+        margin-top: 6.25em;
     }
 
     .intro2Ul {
@@ -207,9 +199,11 @@ footer {
 
     display: flex;
 
-    width: 800px;
+    width: 76em;
 
-    background-color: $color1;
+    padding: 1em;
+
+    background-color: $color3;
 
     .terminos {
         text-align: $cnt;
@@ -218,7 +212,7 @@ footer {
     
         font-style: oblique;
     
-        margin-left: 50px;
+        margin-left: 3.125em;
     
         grid-area: terminos;
     }
@@ -252,7 +246,7 @@ footer {
     .mainHtml {
         width: $mobile;
 
-        height: 700px;
+        height: 43.75em;
 
         background-size: cover;
     }
@@ -262,7 +256,7 @@ footer {
     }
 
     .intro2 {
-        margin-top: 20px;
+        margin-top: 1.25em;
 
         font-size: $f-size2;
     }
@@ -272,9 +266,9 @@ footer {
 
         display: block;
 
-        height: 50px;
+        height: 3.125em;
 
-        width: 572px;
+        width: 35.75em;
     }
     .terminosL {
         text-align: start;
@@ -297,7 +291,7 @@ footer {
             transition: 1.5s;
 
             &:hover {
-                transform: translate(-400px) scale(1.3) ;
+                transform: translate(-25em) scale(1.3) ;
             }
         }
     }
@@ -305,13 +299,13 @@ footer {
 
 @media only screen  and (max-width: $mobile) {
     .stockEquipo:hover { 
-        transform: translate(-50px) scale(1.1) ;
+        transform: translate(-3.125em) scale(1.1) ;
     }
 
     .sn {
         max-width: $mobile;
 
-        height: 300px;
+        height: 18.75em;
     }
 }
 
@@ -320,7 +314,7 @@ footer {
 
     font-size: $f-size3;
     
-    margin-top: 30px;
+    margin-top: 1.875em;
 }
 
 .subtSN {
@@ -347,11 +341,11 @@ footer {
     
         text-decoration: underline;
     
-        margin-bottom: 20px;
+        margin-bottom: 1.25em;
     }
 
     .video {
-        margin-top: 50px;
+        margin-top: 3.125em;
     
         display: flex;
     
@@ -373,7 +367,7 @@ footer {
 .emailT {
     display: block;
 
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 
 .emailP {
@@ -381,11 +375,11 @@ footer {
 }
 
 .edad {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .selec {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .clases-s {
@@ -393,9 +387,9 @@ footer {
 }
 
 .botones {
-    margin-top: 20px;
+    margin-top: 1.25em;
 
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 .botonesDiv {
@@ -403,5 +397,5 @@ footer {
 }
 
 .consulta {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }

@@ -12,9 +12,9 @@ body {
 }
 
 header {
-  background-color: #f94144;
   padding: 0.6em;
   margin-bottom: -1.25em;
+  background-color: #F9C74F;
 }
 header .logo {
   width: 18.75em;
@@ -32,10 +32,13 @@ header h1 {
   margin-top: 0.3em;
   text-decoration: underline;
   border-width: 0.3em;
+  color: #f3722c;
 }
 header .navbar {
   justify-content: baseline;
   border: double;
+}
+header .navIndex {
   width: 24em;
 }
 header .menu-25px {
@@ -73,7 +76,7 @@ header li {
 }
 
 .mainHtml {
-  background-color: #f3722c;
+  background-color: #F9C74F;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 9.375em 12.5em 12.5em;
@@ -101,6 +104,7 @@ header li {
 .mainHtml .intro2Ul {
   grid-area: text3;
   font-size: 1.25em;
+  margin-left: 1.5em;
 }
 .mainHtml .decisiones {
   text-decoration: underline;
@@ -125,9 +129,9 @@ footer {
   left: 50%;
   transform: translate(-50%);
   display: flex;
-  width: 76em;
+  width: 78.9em;
   padding: 1em;
-  background-color: #f8961e;
+  background-color: #F9C74F;
 }
 footer .terminos {
   text-align: center;
@@ -135,48 +139,29 @@ footer .terminos {
   font-style: oblique;
   margin-left: 3.125em;
   grid-area: terminos;
+  color: #f94144;
 }
 footer .terminosL {
   text-align: right;
   grid-area: terminos;
+  color: #f94144;
+  font-weight: bold;
 }
 footer .redes {
   text-align: right;
   grid-area: terminos;
 }
 
-@media only screen and (max-width: 576px) {
-  .navIndex {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  .menu {
-    border: double;
-  }
-  .mainHtml {
-    width: 576px;
-    height: 43.75em;
-    background-size: cover;
-  }
-  .intro1 {
-    font-size: 1.3em;
-  }
-  .intro2 {
-    margin-top: 1.25em;
-    font-size: 1.3em;
-  }
-  .footerIndex {
-    position: relative;
-    display: block;
-    height: 3.125em;
-    width: 35.75em;
-  }
-  .terminosL {
-    text-align: start;
-  }
-}
 /* sobre-nosotros.html */
+.navSN {
+  padding-bottom: 1em;
+  margin-bottom: 0.5em;
+  width: 20em;
+}
+
+.sn {
+  height: 40em;
+}
 .sn .equipo {
   display: flex;
   position: relative;
@@ -189,15 +174,6 @@ footer .redes {
   transform: translate(-25em) scale(1.3);
 }
 
-@media only screen and (max-width: 576px) {
-  .stockEquipo:hover {
-    transform: translate(-3.125em) scale(1.1);
-  }
-  .sn {
-    max-width: 576px;
-    height: 18.75em;
-  }
-}
 .descSN {
   display: inline;
   font-size: 1.25em;
@@ -206,6 +182,8 @@ footer .redes {
 
 .subtSN {
   text-decoration: underline;
+  text-align: center;
+  color: #277DA1;
 }
 
 .caption {
@@ -216,10 +194,17 @@ footer .redes {
 }
 
 /* clases.html */
+.navClases {
+  padding-bottom: 1em;
+  margin-bottom: 0.5em;
+  width: 20em;
+}
+
 .fondo .clases {
   text-align: center;
   text-decoration: underline;
   margin-bottom: 1.25em;
+  color: #277DA1;
 }
 .fondo .video {
   margin-top: 3.125em;
@@ -228,11 +213,22 @@ footer .redes {
 }
 
 /* idiomas.html */
+.navIdiomas {
+  width: 20em;
+}
+
+.listaIdiomas {
+  text-align: center;
+  margin-top: 0.5em;
+  background-color: #F9C74F;
+  text-decoration: underline;
+  color: #277DA1;
+}
+
 .flags {
   width: 100%;
   min-height: 25em;
-  background-color: #ffa500;
-  background-image: linear-gradient(#ff9900, #ff5e00);
+  background-color: #F9C74F;
   padding: 1.25em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -346,7 +342,7 @@ footer .redes {
   z-index: 1;
   left: 0;
   top: 110%;
-  transform: scale(3) translate(170px) translateY(-3.75em);
+  transform: scale(3) translate(10.625em) translateY(-3.75em);
   color: #008000;
   font-size: 0.875em;
 }
@@ -437,7 +433,7 @@ footer .redes {
 }
 
 .portugues {
-  width: 13.75em;
+  width: 21em;
   grid-area: portugues;
 }
 
@@ -486,39 +482,25 @@ footer .redes {
   left: 50%;
   transform: translate(-50%);
   display: flex;
-  width: 50em;
+  width: 77em;
 }
 
-/* idiomas.html Media queries */
-@media only screen and (max-width: 576px) {
-  .main-idiomas {
-    width: 576px;
-  }
-  .flags {
-    display: block;
-  }
-  .txtIngles::before {
-    transform: scale(1.9) translate(3.75em) translateY(-7.5em);
-  }
-  .txtFrances::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-3.125em);
-  }
-  .txtAleman::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
-  }
-  .txtItaliano::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-3.75em);
-  }
-  .txtPortugues::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
-  }
-  .txtRuso::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
-  }
-}
 /* contacto.html */
+.navContacto {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  width: 24em;
+}
+
 .contacto, .sn, .fondo {
-  background-color: #d3d3d3;
+  background-color: #F9C74F;
+}
+.contacto .h2C, .sn .h2C, .fondo .h2C {
+  text-align: center;
+}
+
+.h2C {
+  color: #277DA1;
 }
 
 .emailT {
@@ -553,6 +535,91 @@ footer .redes {
 
 .consulta {
   margin-bottom: 1.25em;
+}
+
+.footerContacto {
+  position: relative;
+}
+
+/* Media queries */
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  body {
+    background-color: #F9C74F;
+    height: 4.375em;
+  }
+  .navIndex {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  .menu {
+    border: double;
+  }
+  .mainHtml {
+    width: 576px;
+    height: 43.75em;
+    background-size: cover;
+  }
+  .intro1 {
+    font-size: 1.3em;
+    margin-bottom: 1.25em;
+  }
+  .intro2 {
+    margin: 1.25em;
+    font-size: 1.3em;
+  }
+  .intro2Ul {
+    margin-top: 1.25em;
+    padding: 0.5em;
+  }
+  .footerIndex {
+    position: relative;
+    display: block;
+    height: 3.125em;
+    width: 35.75em;
+  }
+  .terminosL {
+    text-align: start;
+  }
+}
+/* Sobre nosotros */
+@media only screen and (max-width: 576px) {
+  .stockEquipo:hover {
+    transform: translate(-3.125em) scale(1.1);
+  }
+  .sn {
+    max-width: 576px;
+    height: 18.75em;
+  }
+}
+/* Idiomas */
+@media only screen and (max-width: 576px) {
+  .main-idiomas {
+    width: 576px;
+  }
+  .flags {
+    display: block;
+  }
+  .txtIngles::before {
+    transform: scale(1.9) translate(3.75em) translateY(-7.5em);
+  }
+  .txtFrances::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-3.125em);
+  }
+  .txtAleman::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
+  }
+  .txtItaliano::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-3.75em);
+  }
+  .txtPortugues::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
+  }
+  .txtRuso::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

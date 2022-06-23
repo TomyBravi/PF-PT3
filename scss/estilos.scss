@@ -3,6 +3,8 @@
 $color1: #f94144;
 $color2: #f3722c;
 $color3: #f8961e;
+$color4: #F9C74F;
+$color5: #277DA1;
 $animacion1: scale(1.8) translatex(12.5em) translatey(3.125em);
 $cnt: center;
 $background1: url(../assets/languages.jpg);
@@ -31,18 +33,17 @@ $f-size3: 1.25em;
 
 
 body {
-
     @include medidas(100vh, 0,$color2 );
 
     position: relative;
 }
 
     header {
-    background-color: $color1;
-
     padding: 0.6em;
 
     margin-bottom: -1.25em;
+
+    background-color: $color4;
 
     .logo {
         width: 18.75em;
@@ -70,14 +71,18 @@ body {
         text-decoration: underline;
     
         border-width: 0.3em;
+
+        color: $color2;
     }
 
     .navbar {
         justify-content: baseline;
 
         border:  double;
+    }
 
-        width: 24em;    
+    .navIndex {
+        width: 24em;
     }
 
     $size-color : (
@@ -112,7 +117,7 @@ body {
 }
 }
 .mainHtml {
-    background-color: $color2;
+    background-color: $color4;
 
     display: grid;
 
@@ -163,6 +168,8 @@ body {
         grid-area: text3;
 
         font-size: $f-size3;
+
+        margin-left: 1.5em;
     }
 
     .decisiones {
@@ -199,11 +206,11 @@ footer {
 
     display: flex;
 
-    width: 76em;
+    width: 78.9em;
 
     padding: 1em;
 
-    background-color: $color3;
+    background-color: $color4;
 
     .terminos {
         text-align: $cnt;
@@ -215,12 +222,18 @@ footer {
         margin-left: 3.125em;
     
         grid-area: terminos;
+
+        color: $color1;
     }
 
     .terminosL {
         text-align: right;
     
         grid-area: terminos;
+
+        color: $color1;
+
+        font-weight: bold;
     }
 
     .redes {
@@ -230,55 +243,20 @@ footer {
     }
 }
 
-@media only screen  and (max-width: $mobile) {
-    .navIndex {
-        display: flex;
-
-        justify-content: $cnt;
-
-        position: relative;
-    }
-
-    .menu {
-        border: double;
-    }
-
-    .mainHtml {
-        width: $mobile;
-
-        height: 43.75em;
-
-        background-size: cover;
-    }
-
-    .intro1 {
-        font-size: $f-size2;
-    }
-
-    .intro2 {
-        margin-top: 1.25em;
-
-        font-size: $f-size2;
-    }
-
-    .footerIndex {
-        position: relative;
-
-        display: block;
-
-        height: 3.125em;
-
-        width: 35.75em;
-    }
-    .terminosL {
-        text-align: start;
-    }
-}
-
 /* sobre-nosotros.html */
+
+.navSN {
+    padding-bottom: 1em;
+
+    margin-bottom: 0.5em;
+
+    width: 20em;
+}
 
 .sn {
     @extend .contacto;
+    
+    height: 40em;
 
     .equipo {
         display: flex;
@@ -297,18 +275,6 @@ footer {
     }
 }
 
-@media only screen  and (max-width: $mobile) {
-    .stockEquipo:hover { 
-        transform: translate(-3.125em) scale(1.1) ;
-    }
-
-    .sn {
-        max-width: $mobile;
-
-        height: 18.75em;
-    }
-}
-
 .descSN {
     display: inline;
 
@@ -319,6 +285,10 @@ footer {
 
 .subtSN {
     text-decoration: underline;
+
+    text-align: $cnt;
+
+    color: $color5;
 }
 
 .caption {
@@ -333,6 +303,14 @@ footer {
 
 /* clases.html */
 
+.navClases {
+    padding-bottom: 1em;
+
+    margin-bottom: 0.5em;
+
+    width: 20em;
+}
+
 .fondo {
 @extend .contacto;
 
@@ -342,6 +320,8 @@ footer {
         text-decoration: underline;
     
         margin-bottom: 1.25em;
+
+        color: $color5;
     }
 
     .video {
@@ -360,8 +340,24 @@ footer {
 
 /* contacto.html */
 
+.navContacto {
+    padding-bottom: 0.5em;
+
+    margin-bottom: 0.5em;
+
+    width: 24em;
+}
+
 .contacto {
-    background-color: #d3d3d3;
+    background-color: $color4;
+
+    .h2C {
+        text-align: center;
+    }
+}
+
+.h2C {
+    color: $color5;
 }
 
 .emailT {
@@ -399,3 +395,11 @@ footer {
 .consulta {
     margin-bottom: 1.25em;
 }
+
+.footerContacto {
+    position: relative;
+}
+
+/* Media queries */
+
+@import '../scss/media';

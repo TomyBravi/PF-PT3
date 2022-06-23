@@ -1,11 +1,25 @@
+.navIdiomas {
+    width: 20em;
+}
+
+.listaIdiomas {
+    text-align: $cnt;
+
+    margin-top: 0.5em;
+
+    background-color: $color4;
+
+    text-decoration: underline;
+
+    color: $color5;
+}
+
 .flags {
     width: 100%;
 
     min-height: 25em;
 
-    background-color: #ffa500;
-
-    background-image: linear-gradient(#ff9900, #ff5e00);
+    background-color: $color4;
 
     padding: 1.25em;
 
@@ -200,7 +214,7 @@
     
         top: 110%;
     
-        transform: scale(3.0) translate(170px) translateY(-3.75em);
+        transform: scale(3.0) translate(10.625em) translateY(-3.75em);
     
         color: #008000;
     
@@ -353,7 +367,7 @@
 }
 
 .portugues {
-    width: 13.75em;
+    width: 21em;
 
     grid-area: portugues;
 }
@@ -435,41 +449,5 @@
 
     display: flex;
 
-    width: 50em;
-}
-
-/* idiomas.html Media queries */
-
-@media only screen  and (max-width: 576px) {
-    .main-idiomas {
-        width: 576px;
-    }
-
-    .flags {
-        display:block;
-    }
-
-    .txtIngles::before {
-        transform: scale(1.9) translate(3.75em) translateY(-7.5em)
-    }
-
-    .txtFrances::before {
-        transform: scale(1.9) translate(-7.5em) translateY( -3.125em) ;
-    }
-
-    .txtAleman::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
-    }
-
-    .txtItaliano::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-3.75em);
-    }
-
-    .txtPortugues::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
-    }
-    
-    .txtRuso::before {
-    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
-    }
+    width: 77em;
 }

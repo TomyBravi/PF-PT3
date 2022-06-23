@@ -1,8 +1,20 @@
-@media only screen  and (max-width: $mobile) {
-    #navIndex {
+@media only screen  and (min-width: 480px) and (max-width: $mobile) {
+    body {
+        background-color: $color4;
+
+        height: 4.375em;
+    }
+
+    .navIndex {
         display: flex;
+
         justify-content: $cnt;
+
         position: relative;
+
+        margin-top: 2em;
+
+        margin-left: 1em;
     }
 
     .menu {
@@ -11,24 +23,38 @@
 
     .mainHtml {
         width: $mobile;
-        height: 700px;
+
+        height: 43.75em;
+
         background-size: cover;
     }
 
     .intro1 {
-        font-size: medium;
+        font-size: $f-size2;
+
+        margin-bottom: 1.25em;
     }
 
     .intro2 {
-        margin-top: 20px;
-        font-size: medium;
+        margin: 1.25em;
+
+        font-size: $f-size2;
+    }
+
+    .intro2Ul {
+        margin-top: 1.25em;
+
+        padding: 0.5em;
     }
 
     .footerIndex {
         position: relative;
+
         display: block;
-        height: 50px;
-        width: 572px;
+
+        height: 3.125em;
+
+        width: 35.75em;
     }
     .terminosL {
         text-align: start;
@@ -38,12 +64,14 @@
 /* Sobre nosotros */
 
 @media only screen  and (max-width: $mobile) {
-    #stockEquipo:hover { 
-        transform: translate(-50px) scale(1.1) ;
+    .stockEquipo:hover { 
+        transform: translate(-3.125em) scale(1.1) ;
     }
+
     .sn {
         max-width: $mobile;
-        height: 300px;
+
+        height: 18.75em;
     }
 }
 
@@ -53,25 +81,32 @@
     .main-idiomas {
         width: 576px;
     }
+
     .flags {
         display:block;
     }
-    .txtIngles:before {
-        transform: scale(1.9) translate(60px) translateY(-120px)
+
+    .txtIngles::before {
+        transform: scale(1.9) translate(3.75em) translateY(-7.5em)
     }
-    .txtFrances:before {
-        transform: scale(1.9) translate(-120px) translateY(-50px) ;
+
+    .txtFrances::before {
+        transform: scale(1.9) translate(-7.5em) translateY( -3.125em) ;
     }
-    .txtAleman:before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+
+    .txtAleman::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
     }
-    .txtItaliano:before {
-    transform: scale(1.9) translate(-120px) translateY(-60px);
+
+    .txtItaliano::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-3.75em);
     }
-    .txtPortugues:before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+
+    .txtPortugues::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
     }
-    .txtRuso:before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    
+    .txtRuso::before {
+    transform: scale(1.9) translate(-7.5em) translateY(-7.5em);
     }
 }

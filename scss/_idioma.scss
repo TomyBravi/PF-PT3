@@ -1,11 +1,11 @@
 .navIdiomas {
-    width: 20em;
+    width: 25vw;
 }
 
 .listaIdiomas {
     text-align: $cnt;
 
-    margin-top: 0.5em;
+    margin-top: 8px;
 
     background-color: $color4;
 
@@ -15,21 +15,19 @@
 }
 
 .flags {
-    width: 100%;
-
-    min-height: 25em;
+    min-height: 46.56577415599534vh;
 
     background-color: $color4;
 
-    padding: 1.25em;
+    padding: 20px;
 
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
 
-    grid-template-rows: 9.375em 12.5em 12.5em 6.25em;
+    grid-template-rows: 150px 200px 200px 100px;
 
-    grid-gap: 7.5em 6.25em;
+    grid-gap: 120px 100px;
 
     grid-template-areas: "text1 ingles text2 frances"
         "text3 aleman text4 italiano"
@@ -37,7 +35,15 @@
 }
 
 .idioma {
-    border: 2px solid #ff0;
+    border: 2px solid #ffff00;
+}
+
+.ingles {
+    width: 25vw;
+
+    grid-area: ingles;
+    
+    height: 25.61117578579744vh;
 }
 
 .txtIngles {
@@ -47,7 +53,7 @@
 
     text-align: center;
 
-    margin-top: 3.125em;
+    margin-top: 50px;
 
     font-weight: bold;
 
@@ -62,15 +68,15 @@
     
         opacity: 0;
     
-        width: 15.625em;
+        width: 19.53125vw;
     
-        height: 7.8125em;
+        height: 14.551804423748544vh;
     
         text-align: center;
     
-        border-radius: 0.3125em;
+        border-radius: 5px;
     
-        padding: 0.3125em 0;
+        padding: 5px 0;
     
         transition: opacity 1s ease-in-out;
     
@@ -82,13 +88,13 @@
     
         top: 110%;
     
-        background: linear-gradient(180deg, transparent, transparent 2.75em, #c8102e 2.75em, #c8102e 4.125em, transparent 4.125em, transparent 100%), linear-gradient(90deg, transparent, transparent 6.1875em, #c8102e 6.1875em, #c8102e 7.5625em, transparent 7.5625em, transparent 100%), linear-gradient(180deg, transparent, transparent 2.3125em, #FFF 2.3125em, #FFF 4.5625em, transparent 4.5625em, transparent 100%), linear-gradient(90deg, transparent, transparent 5.75em, #FFF 5.75em, #FFF 8em, transparent 8em, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 5.6875em, #c8102e 5.6875em, #c8102e 6.125em, transparent 6.125em, transparent 100%) 0 0/6.875em 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 6.125em, #c8102e 6.125em, #c8102e 6.625em, transparent 6.625em, transparent 100%) 6.875em 0/6.875em 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 6.125em, #c8102e 6.125em, #c8102e 6.625em, transparent 6.625em, transparent 100%) 6.875em 3.4375em/6.875em 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 5.6875em, #c8102e 5.6875em, #c8102e 6.125em, transparent 6.125em, transparent 100%) 0 3.4375em/6.875em 100% no-repeat, linear-gradient(27deg, transparent, transparent 5.4375em, #FFF 5.4375em, #FFF 6.8125em, transparent 6.8125em, transparent 100%), linear-gradient(153deg, transparent, transparent 5.4375em, #FFF 5.4375em, #FFF 6.8125em, transparent 6.8125em, transparent 100%), #012169;
+        background: linear-gradient(180deg, transparent, transparent 44px, #c8102e 44px, #c8102e 66px, transparent 66px, transparent 100%), linear-gradient(90deg, transparent, transparent 99px, #c8102e 99px, #c8102e 121px, transparent 121px, transparent 100%), linear-gradient(180deg, transparent, transparent 37px, #ffffff 37px, #ffffff 73px, transparent 73px, transparent 100%), linear-gradient(90deg, transparent, transparent 92px, #ffffff 92px, #ffffff 128px, transparent 128px, transparent 100%), linear-gradient(26.56505deg, transparent, transparent  91px, #c8102e  91px, #c8102e 98px, transparent 98px, transparent 100%) 0 0/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 0/110px 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px  55px/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent  91px, #c8102e  91px, #c8102e 98px, transparent 98px, transparent 100%) 0  55px/110px 100% no-repeat, linear-gradient(27deg, transparent, transparent 87px, #ffffff 87px, #ffffff 109px, transparent 109px, transparent 100%), linear-gradient(153deg, transparent, transparent 87px, #ffffff 87px, #ffffff 109px, transparent 109px, transparent 100%), #012169;
     
-        transform: scale(3.0) translate(9.375em) translateY(-3.125em);
+        transform: scale(3.0) translate(150px) translateY(-50px);
     
-        color: #008000;
+        color: #00FFFF;
     
-        font-size: 0.9375em;
+        font-size: 0.8975em;
     }
 
     &:hover::before {
@@ -98,12 +104,12 @@
     }
 }
 
-.ingles {
-    width: 20em;
+.frances {
+    height: 25.61117578579744vh;
 
-    grid-area: ingles;
-    
-    height: 13.75em;
+    width: 25vw;
+
+    grid-area: frances;
 }
 
 .txtFrances {
@@ -113,7 +119,7 @@
     
     text-align: center;
     
-    margin-top: 3.125em;
+    margin-top: 50px;
     
     font-weight: bold;
     
@@ -128,15 +134,15 @@
     
         opacity: 0;
     
-        width: 15.625em;
+        width: 19.53125vw;
     
-        height: 7.8125em;
+        height: 14.551804423748544vh;
     
         text-align: center;
     
-        border-radius: 0.3125em;
+        border-radius: 5px;
     
-        padding: 0.3125em 0;
+        padding: 5px 0;
     
         transition: opacity 1s ease-in-out;
     
@@ -148,11 +154,11 @@
     
         top: 110%;
     
-        transform: scale(3.0) translate( -5em) translateY( -3.125em);
+        transform: scale(3.0) translate(-80px) translateY(-50px);
     
-        color: #008000;
+        color: #00FFFF;
     
-        font-size: 0.9375em;
+        font-size: 0.8em;
     }
 
     &:hover::before {
@@ -164,12 +170,12 @@
     }
 }
 
-.frances {
-    height: 13.75em;
+.aleman {
+    height: 25.61117578579744vh;
 
-    width: 20em;
+    width: 25vw;
 
-    grid-area: frances;
+    grid-area: aleman;
 }
 
 .txtAleman {
@@ -179,7 +185,7 @@
     
     text-align: center;
     
-    margin-top: 3.125em;
+    margin-top: 50px;
     
     font-weight: bold;
     
@@ -194,15 +200,15 @@
     
         opacity: 0;
     
-        width: 15.625em;
+        width: 19.53125vw;
     
-        height: 7.8125em;
+        height: 14.551804423748544vh;
     
         text-align: center;
     
-        border-radius: 0.3125em;
+        border-radius: 5px;
     
-        padding: 0.3125em 0;
+        padding: 5px 0;
     
         transition: opacity 1s ease-in-out;
     
@@ -214,28 +220,28 @@
     
         top: 110%;
     
-        transform: scale(3.0) translate(10.625em) translateY(-3.75em);
+        transform: scale(3.0) translate(170px) translateY(-60px);
     
-        color: #008000;
+        color: #00FFFF;
     
-        font-size: 0.875em;
+        font-size: 0.7em;
     }
 
     &:hover::before {
         opacity: 1;
     
-        background: linear-gradient(#000 33.333%, #FF0000 33.33% 66.666%, #FFCC00 66.666%);;
+        background: linear-gradient(#000000 33.333%, #FF0000 33.33% 66.666%, #FFCC00 66.666%);;
     
         visibility: visible;
     }
 }
 
-.aleman {
-    height: 13.75em;
+.italiano {
+    height: 25.61117578579744vh;
 
-    width: 20em;
+    width: 25vw;
 
-    grid-area: aleman;
+    grid-area: italiano;
 }
 
 .txtItaliano {
@@ -245,7 +251,7 @@
     
     text-align: center;
     
-    margin-top: 3.125em;
+    margin-top: 50px;
     
     font-weight: bold;
     
@@ -260,15 +266,15 @@
     
         opacity: 0;
     
-        width: 15.625em;
+        width: 19.53125vw;
     
-        height: 7.8125em;
+        height: 14.551804423748544vh;
     
         text-align: center;
     
-        border-radius: 0.3125em;
+        border-radius: 5px;
     
-        padding: 0.3125em 0;
+        padding: 5px 0;
     
         transition: opacity 1s ease-in-out;
     
@@ -280,11 +286,11 @@
     
         top: 110%;
     
-        transform: scale(3.0) translate(-90px) translateY(-3.75em);
+        transform: scale(3.0) translate(-90px) translateY(-60px);
     
-        color: rgb(241, 98, 241);
+        color: #00FFFF;
     
-        font-size: 0.9375em;
+        font-size: 0.8em;
     }
 
     &:hover::before {
@@ -296,12 +302,10 @@
     }
 }
 
-.italiano {
-    height: 13.75em;
+.portugues {
+    width: 26.25vw;
 
-    width: 20em;
-
-    grid-area: italiano;
+    grid-area: portugues;
 }
 
 .txtPortugues {
@@ -311,7 +315,7 @@
     
     text-align: center;
     
-    margin-top: 3.125em;
+    margin-top: 50px;
     
     font-weight: bold;
     
@@ -326,15 +330,15 @@
     
         opacity: 0;
     
-        width: 15.625em;
+        width: 19.53125vw;
     
-        height: 7.8125em;
+        height: 14.551804423748544vh;
     
         text-align: center;
     
-        border-radius: 0.3125em;
+        border-radius: 5px;
     
-        padding: 0.3125em 0;
+        padding: 5px 0;
     
         transition: opacity 1s ease-in-out;
     
@@ -346,11 +350,11 @@
     
         top: 110%;
     
-        transform: scale(3.0) translate(170px) translateY(-7.5em);
+        transform: scale(3.0) translate(170px) translateY(-120px);
     
-        color: rgb(241, 98, 241);
+        color: #00FFFF;
     
-        font-size: 0.6875em;
+        font-size: 0.5800em;
     }
     
     &:hover::before {
@@ -366,10 +370,12 @@
     }
 }
 
-.portugues {
-    width: 21em;
+.ruso {
+    height: 25.61117578579744vh;
 
-    grid-area: portugues;
+    width: 25vw;
+
+    grid-area: ruso;
 }
 
 .txtRuso {
@@ -379,7 +385,7 @@
     
     text-align: center;
     
-    margin-top: 3.125em;
+    margin-top: 50px;
     
     font-weight: bold;
     
@@ -394,15 +400,15 @@
     
         opacity: 0;
     
-        width: 15.625em;
+        width: 19.53125vw;
     
-        height: 7.8125em;
+        height: 14.551804423748544vh;
     
         text-align: center;
     
-        border-radius: 0.3125em;
+        border-radius: 5px;
     
-        padding: 0.3125em 0;
+        padding: 5px 0;
     
         transition: opacity 1s ease-in-out;
     
@@ -414,28 +420,20 @@
     
         top: 110%;
     
-        transform: scale(3.0) translate( -5em) translateY(-7.5em);
+        transform: scale(3.0) translate(-80px) translateY(-120px);
     
-        color: rgb(241, 98, 241);
+        color: #00FFFF;
     
-        font-size: 11px;
+        font-size: 0.58em;
     }
 
     &:hover::before {
         opacity: 1;
     
-        background: linear-gradient(#FFF 33.33%, #0039A6 33.33% 66.67%, #D52B1E 66.67%);
+        background: linear-gradient(#ffffff 33.33%, #0039A6 33.33% 66.67%, #D52B1E 66.67%);
     
         visibility: visible;
     }
-}
-
-.ruso {
-    height: 13.75em;
-
-    width: 20em;
-
-    grid-area: ruso;
 }
 
 .footerIdiomas {
@@ -449,5 +447,5 @@
 
     display: flex;
 
-    width: 77em;
+    width: 96.25vw;
 }

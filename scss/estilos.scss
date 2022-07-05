@@ -5,7 +5,7 @@ $color2: #f3722c;
 $color3: #f8961e;
 $color4: #F9C74F;
 $color5: #277DA1;
-$animacion1: scale(1.8) translatex(12.5em) translatey(3.125em);
+$animacion1: scale(1.8) translatex(200px) translatey(50px);
 $cnt: center;
 $background1: url(../assets/languages.jpg);
 $intro1-fonts:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,14 +39,14 @@ body {
 }
 
     header {
-    padding: 0.6em;
+    padding: 9.6px;
 
-    margin-bottom: -1.25em;
+    margin-bottom: -20px;
 
     background-color: $color4;
 
     .logo {
-        width: 18.75em;
+        width: 23.4375vw;
     
         display: flex;
     
@@ -58,19 +58,19 @@ body {
     }
 
     h1 {
-        height: 3.1em;
+        height: 5.774155995343422vh;
     
         text-align: $cnt;
 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
-        margin-bottom: 0.3em;
+        margin-bottom: 4.8px;
 
-        margin-top: 0.3em;
+        margin-top: 4.8px;
     
         text-decoration: underline;
     
-        border-width: 0.3em;
+        border-width: 4.8px;
 
         color: $color2;
     }
@@ -82,7 +82,7 @@ body {
     }
 
     .navIndex {
-        width: 24em;
+        width: 30vw;
     }
 
     $size-color : (
@@ -100,7 +100,7 @@ body {
     .menu-#{$sizes} {
         text-align: $cnt;
     
-        width: 5em;
+        width: 6.25vw;
     
         height: $sizes;
     
@@ -123,9 +123,9 @@ body {
 
     grid-template-columns: repeat(2, 1fr);
 
-    grid-template-rows:  9.375em 12.5em 12.5em ;
+    grid-template-rows:  150px 200px 200px ;
 
-    grid-gap: 3.75em 6.25em;
+    grid-gap: 60px 100px;
 
     grid-template-areas: "text1 text1 text1 text1"
         "text2 text2 text2 text2"
@@ -133,15 +133,15 @@ body {
         "terminos terminos terminos terminos" ;
 
     .intro1 {
-        margin-bottom: 1.25em;
+        margin-bottom: 20px;
         
         text-align: justify;
         
-        margin-top: 1.25em;
+        margin-top: 20px;
         
         font-family: $intro1-fonts;
         
-        padding: 0.9375em;
+        padding: 15px;
         
         grid-area: text1;
 
@@ -153,15 +153,15 @@ body {
         
         text-align: justify;
         
-        margin-top: 1.875em;
+        margin-top: 30px;
         
         grid-area: text2;
 
-        padding: 0.9375em;
+        padding: 15px;
 
         font-size: $f-size1;
 
-        margin-top: 6.25em;
+        margin-top: 100px;
     }
 
     .intro2Ul {
@@ -169,7 +169,7 @@ body {
 
         font-size: $f-size3;
 
-        margin-left: 1.5em;
+        margin-left: 24px;
     }
 
     .decisiones {
@@ -206,9 +206,9 @@ footer {
 
     display: flex;
 
-    width: 78.9em;
+    width: 98.62500000000001vw;
 
-    padding: 1em;
+    padding: 16px;
 
     background-color: $color4;
 
@@ -219,7 +219,7 @@ footer {
     
         font-style: oblique;
     
-        margin-left: 3.125em;
+        margin-left: 50px;
     
         grid-area: terminos;
 
@@ -246,17 +246,17 @@ footer {
 /* sobre-nosotros.html */
 
 .navSN {
-    padding-bottom: 1em;
+    padding-bottom: 16px;
 
-    margin-bottom: 0.5em;
+    margin-bottom: 8px;
 
-    width: 20em;
+    width: 25vw;
 }
 
 .sn {
     @extend .contacto;
     
-    height: 40em;
+    height: 74.50523864959256vh;
 
     .equipo {
         display: inline;
@@ -268,10 +268,10 @@ footer {
         .stockEquipo {
             transition: 1.5s;
 
-            margin-left: 19em;
+            margin-left: 304px;
 
             &:hover {
-                transform: translate(-5em) scale(1.3) ;
+                transform: translate(-80px) scale(1.3) ;
             }
         }
     }
@@ -282,7 +282,7 @@ footer {
 
     font-size: $f-size3;
     
-    margin-top: 1.875em;
+    margin-top: 30px;
 }
 
 .subtSN {
@@ -306,17 +306,17 @@ footer {
 /* clases.html */
 
 .navClases {
-    padding-bottom: 1em;
+    padding-bottom: 16px;
 
-    margin-bottom: 0.5em;
+    margin-bottom: 8px;
 
-    width: 20em;
+    width: 25vw;
 }
 
 .textoVideo {
     text-align: $cnt;
 
-    margin-top: 1em;
+    margin-top: 16px;
 }
 
 .fondo {
@@ -327,13 +327,13 @@ footer {
     
         text-decoration: underline;
     
-        margin-bottom: 1.25em;
+        margin-bottom: 20px;
 
         color: $color5;
     }
 
     .video {
-        margin-top: 3.125em;
+        margin-top: 50px;
     
         display: flex;
     
@@ -352,15 +352,21 @@ footer {
 /* contacto.html */
 
 .navContacto {
-    padding-bottom: 0.5em;
+    padding-bottom: 8px;
 
-    margin-bottom: 0.5em;
+    margin-bottom: 8px;
 
-    width: 24em;
+    width: 25vw;
 }
 
 .contacto {
     background-color: $color4;
+
+    border: groove 2px black;
+
+    border-radius: 15px;
+
+    margin-top: 10px;
 
     .h2C {
         text-align: center;
@@ -372,17 +378,17 @@ footer {
 }
 
 .nombre {
-    margin-left: 33em;
+    margin-left: 528px;
 
-    margin-top: 2em;
+    margin-top: 32px;
 
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .emailT {
     display: block;
 
-    margin-top: 0.625em;
+    margin-top: 10px;
 
     text-align: $cnt;
 }
@@ -390,14 +396,14 @@ footer {
 .emailP {
     display: block;
 
-    margin-left: 33em;
+    margin-left: 528px;
     
 }
 
 .edad {
-    margin-bottom: 2em;
+    margin-bottom: 32px;
 
-    margin-left: 33em;
+    margin-left: 528px;
 }
 
 .selecT {
@@ -407,11 +413,11 @@ footer {
 }
 
 .selec {
-    margin-bottom: 0.625em;
+    margin-bottom: 10px;
 
-    margin-left: 33em;
+    margin-left: 528px;
 
-    margin-top: 0.5em;
+    margin-top: 8px;
 }
 
 .clases-s {
@@ -421,45 +427,45 @@ footer {
 }
 
 .uno {
-    margin-left: 35em;
+    margin-left: 560px;
 }
 
 .precios {
     display: flex;
 
-    margin-left: 33em;
+    margin-left: 528px;
 }
 
 .primerPrecio {
-    margin-right: 1.5em;
+    margin-right: 24px;
 }
 
 .segundoPrecio {
-    margin-right: 1.5em;
+    margin-right: 24px;
 }
 
 .botones {
-    margin-top: 1.25em;
+    margin-top: 20px;
 
-    margin-left: 1.25em;
+    margin-left: 20px;
 }
 
 .botonesDiv {
     display: block;
 
-    margin-left: 33em;
+    margin-left: 528px;
 
-    margin-bottom: 2em;
+    margin-bottom: 32px;
 }
 
 .consulta {
-    margin-bottom: 1.25em;
+    margin-bottom: 20px;
 
-    margin-left: 32em;
+    margin-left: 512px;
 }
 
 .metodo {
-    margin-left: 25em;
+    margin-left: 400px;
 }
 
 .pago {
@@ -475,7 +481,7 @@ footer {
 }
 
 #ccn {
-    margin-left: 33em;
+    margin-left: 528px;
 }
 
 .footerContacto {

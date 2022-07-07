@@ -1,6 +1,6 @@
 /* index */
 
-@media only screen  and (min-width: 360px) and (max-width: $mobile) {
+@media only screen  and (min-width: $min-mobile) and (max-width: $max-mobile) {
     body {
         background-color: $color4;
     }
@@ -34,7 +34,7 @@
     }
 
     .mainHtml {
-        width: $mobile;
+        width: $max-mobile;
 
         height: 81.49010477299186vh;
 
@@ -73,15 +73,19 @@
 
 /* Sobre nosotros */
 
-@media only screen  and (min-width: 360px) and (max-width: $mobile) {
-    .stockEquipo:hover { 
-        transform: translate(-2px) scale(0.1);
+@media only screen  and (min-width: $min-mobile) and (max-width: $max-mobile) {
+    #fotoStock:hover { 
+        transform: translate(10px) scale(1.4);
     }
 
     .stockEquipo {
         width: 80%;
 
-        margin-left: auto;
+        margin-top: 20%;
+    }
+
+    #fotoStock {
+        margin-left: 20px;
     }
 
     .navSN {
@@ -95,15 +99,15 @@
     }
 
     .sn {
-        max-width: $mobile;
+        max-width: $max-mobile;
 
-        height: 29.336437718277065vh;
+        height: 56vh;
     }
 
     .footerSN {
         position: relative;
 
-        bottom: -320px;
+        bottom: -350px;
 
         left: auto;
 
@@ -113,39 +117,103 @@
 
 /* Idiomas */
 
-@media only screen  and (min-width: 360px) and (max-width: $mobile) {
+@media only screen  and (min-width: $min-mobile) and (max-width: $max-mobile) {
     .flags {
         display:block;
     }
 
+    .idioma {
+        display: block;
+
+        width: 40vw;
+
+        margin-top: 10px;
+
+        margin-bottom: 40px;
+
+        margin-left: 30%;
+
+        height: $flagVH;
+    }
+
+    .textoIdioma {
+        margin-left: 48%;
+    }
+
     .txtIngles::before {
-        transform: scale(1.9) translate(60px) translateY(-120px)
+        transform: scale(2) translate(-30px) translateY(-50px);
+
+        width: 40vw;
+
+        height: 20vh;
+
+        background-image: url(/assets/english.jpg);
+
+        background-size: cover;
+
+        font-size: 0.60em;
     }
 
     .txtFrances::before {
-        transform: scale(1.9) translate(-120px) translateY( -50px) ;
+        transform: scale(1.9) translate(-35px) translateY( -50px) ;
+
+        width: 40vw;
+
+        height: 18vh;
+
+        font-size: 0.55em;
     }
 
     .txtAleman::before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+
+    width: 40vw;
+
+    height: 18vh;
+
+    font-size: 0.47em;
     }
 
     .txtItaliano::before {
-    transform: scale(1.9) translate(-120px) translateY(-60px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+
+    width: 40vw;
+
+    height: 20vh;
+
+    font-size: 0.55em;
     }
 
     .txtPortugues::before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+
+    width: 40vw;
+
+    height: 20vh;
+
+    font-size: 0.39em;
     }
     
     .txtRuso::before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+
+    width: 40vw;
+
+    height: 20vh;
+
+    font-size: 0.42em;
     }
 }
 
 /* Clases */
 
-@media only screen  and (min-width: 360px) and (max-width: $mobile) {
+@media only screen  and (min-width: $min-mobile) and (max-width: $max-mobile) {
+    .clasesTitulo {
+        padding-bottom: 20px;
+
+        margin-bottom: 40px;
+    }
+
     .navClases {
     margin-bottom: 32px;
 
@@ -165,7 +233,7 @@
 
 /* Contacto */
 
-@media only screen  and (min-width: 360px) and (max-width: $mobile) {
+@media only screen  and (min-width: $min-mobile) and (max-width: $max-mobile) {
     .navContacto {
     margin-bottom: 32px;
 
@@ -187,7 +255,7 @@
 }
 
 .nombre {
-    margin-left: 128px;
+    margin-left: $form-left;
 
     margin-top: 15px;
 }
@@ -197,11 +265,11 @@
 }
 
 .emailP {
-    margin-left: 128px;
+    margin-left: $form-left;
 }
 
 .edad {
-    margin-left: 192px;
+    margin-left: 43%;
 
     margin-bottom: 24px;
 }
@@ -213,7 +281,7 @@
 }
 
 .selec {
-    margin-left: 176px;
+    margin-left: 41%;
 }
 
 .clases-s {
@@ -221,13 +289,13 @@
 }
 
 .uno {
-    margin-left: 192px;
+    margin-left: 40%;
 }
 
 .precios {
     display: flex;
 
-    margin-left: 160px;
+    margin-left: 36%;
 }
 
 .primerPrecio {
@@ -239,11 +307,11 @@
 }
 
 .consulta {
-    margin-left: 128px;
+    margin-left: $form-left;
 }
 
 .botonesDiv {
-    margin-left: 144px;
+    margin-left: $form-left;
 
     margin-bottom: 32px;
 }
@@ -253,11 +321,11 @@
 }
 
 .metodo {
-    margin-left: 48px;
+    margin-left: 15%;
 }
 
 .mercadoPago {
-    margin-left: 160px;
+    margin-left: 0%;
 }
 
 .pago {
@@ -267,6 +335,6 @@
 }
 
 #ccn {
-    margin-left: 160px;
+    margin-left: $form-left;
 }
 }

@@ -121,6 +121,7 @@ header li {
 
 .footerIndex {
   bottom: auto;
+  width: 98.6vw;
 }
 
 footer {
@@ -129,9 +130,10 @@ footer {
   left: 50%;
   transform: translate(-50%);
   display: flex;
-  width: 98.625vw;
+  width: 97.4vw;
   padding: 16px;
   background-color: #F9C74F;
+  justify-content: center;
 }
 footer .terminos {
   text-align: center;
@@ -220,6 +222,8 @@ footer .redes {
 
 .footerClases {
   background-color: #F9C74F;
+  padding: 41px;
+  width: 93.4vw;
 }
 
 /* idiomas.html */
@@ -487,18 +491,15 @@ footer .redes {
 
 .footerIdiomas {
   position: relative;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  width: 96.25vw;
+  width: 96.09vw;
 }
 
 /* contacto.html */
 .navContacto {
   padding-bottom: 8px;
   margin-bottom: 8px;
-  width: 25vw;
+  margin-top: 15px;
+  width: 30vw;
 }
 
 .contacto, .sn, .fondo {
@@ -606,11 +607,12 @@ footer .redes {
 
 .footerContacto {
   position: relative;
+  width: 98.7vw;
 }
 
 /* Media queries */
 /* index */
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 760px) {
   body {
     background-color: #F9C74F;
   }
@@ -634,7 +636,7 @@ footer .redes {
     border: double;
   }
   .mainHtml {
-    width: 576px;
+    width: 760px;
     height: 81.490104773vh;
     background-size: cover;
     display: inline;
@@ -660,13 +662,16 @@ footer .redes {
   }
 }
 /* Sobre nosotros */
-@media only screen and (min-width: 360px) and (max-width: 576px) {
-  .stockEquipo:hover {
-    transform: translate(-2px) scale(0.1);
+@media only screen and (min-width: 360px) and (max-width: 760px) {
+  #fotoStock:hover {
+    transform: translate(10px) scale(1.4);
   }
   .stockEquipo {
     width: 80%;
-    margin-left: auto;
+    margin-top: 20%;
+  }
+  #fotoStock {
+    margin-left: 20px;
   }
   .navSN {
     margin-bottom: 32px;
@@ -676,42 +681,77 @@ footer .redes {
     margin-bottom: 16px;
   }
   .sn {
-    max-width: 576px;
-    height: 29.3364377183vh;
+    max-width: 760px;
+    height: 56vh;
   }
   .footerSN {
     position: relative;
-    bottom: -320px;
+    bottom: -350px;
     left: auto;
     display: inline;
   }
 }
 /* Idiomas */
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 760px) {
   .flags {
     display: block;
   }
+  .idioma {
+    display: block;
+    width: 40vw;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+    height: 35vh;
+  }
+  .textoIdioma {
+    margin-left: 48%;
+  }
   .txtIngles::before {
-    transform: scale(1.9) translate(60px) translateY(-120px);
+    transform: scale(2) translate(-30px) translateY(-50px);
+    width: 40vw;
+    height: 20vh;
+    background-image: url(/assets/english.jpg);
+    background-size: cover;
+    font-size: 0.6em;
   }
   .txtFrances::before {
-    transform: scale(1.9) translate(-120px) translateY(-50px);
+    transform: scale(1.9) translate(-35px) translateY(-50px);
+    width: 40vw;
+    height: 18vh;
+    font-size: 0.55em;
   }
   .txtAleman::before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+    width: 40vw;
+    height: 18vh;
+    font-size: 0.47em;
   }
   .txtItaliano::before {
-    transform: scale(1.9) translate(-120px) translateY(-60px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+    width: 40vw;
+    height: 20vh;
+    font-size: 0.55em;
   }
   .txtPortugues::before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+    width: 40vw;
+    height: 20vh;
+    font-size: 0.39em;
   }
   .txtRuso::before {
-    transform: scale(1.9) translate(-120px) translateY(-120px);
+    transform: scale(1.9) translate(-35px) translateY(-30px);
+    width: 40vw;
+    height: 20vh;
+    font-size: 0.42em;
   }
 }
 /* Clases */
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 760px) {
+  .clasesTitulo {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
   .navClases {
     margin-bottom: 32px;
     margin-left: 32px;
@@ -724,7 +764,7 @@ footer .redes {
   }
 }
 /* Contacto */
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 760px) {
   .navContacto {
     margin-bottom: 32px;
     margin-left: 32px;
@@ -739,17 +779,17 @@ footer .redes {
     display: inline;
   }
   .nombre {
-    margin-left: 128px;
+    margin-left: 35%;
     margin-top: 15px;
   }
   .emailT {
     text-align: center;
   }
   .emailP {
-    margin-left: 128px;
+    margin-left: 35%;
   }
   .edad {
-    margin-left: 192px;
+    margin-left: 43%;
     margin-bottom: 24px;
   }
   .selecT {
@@ -757,17 +797,17 @@ footer .redes {
     text-align: center;
   }
   .selec {
-    margin-left: 176px;
+    margin-left: 41%;
   }
   .clases-s {
     text-align: center;
   }
   .uno {
-    margin-left: 192px;
+    margin-left: 40%;
   }
   .precios {
     display: flex;
-    margin-left: 160px;
+    margin-left: 36%;
   }
   .primerPrecio {
     margin-right: 24px;
@@ -776,27 +816,27 @@ footer .redes {
     margin-right: 24px;
   }
   .consulta {
-    margin-left: 128px;
+    margin-left: 35%;
   }
   .botonesDiv {
-    margin-left: 144px;
+    margin-left: 35%;
     margin-bottom: 32px;
   }
   .metodos {
     display: block;
   }
   .metodo {
-    margin-left: 48px;
+    margin-left: 15%;
   }
   .mercadoPago {
-    margin-left: 160px;
+    margin-left: 0%;
   }
   .pago {
     display: block;
     text-align: center;
   }
   #ccn {
-    margin-left: 160px;
+    margin-left: 35%;
   }
 }
 

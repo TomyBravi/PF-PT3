@@ -11,6 +11,10 @@ $background1: url(../assets/languages.jpg);
 $intro1-fonts:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $min-mobile: 360px;
 $max-mobile: 760px;
+$min-tablet: 768px;
+$max-tablet: 1023px;
+$min-desktop: 1024px;
+$max-desktop: 1440px;
 $f-size1: 1.5em;
 $f-size2: 1.3em;
 $f-size3: 1.25em;
@@ -283,6 +287,10 @@ footer {
     }
 }
 
+#sn {
+    border: none;
+}
+
 .descSN {
     display: inline;
 
@@ -353,6 +361,8 @@ footer {
     padding: 41px;
 
     width: 93.4vw;
+
+    position: relative;
 }
 
 /* idiomas.html */

@@ -8,7 +8,7 @@ $color5: #277DA1;
 $animacion1: scale(1.8) translatex(200px) translatey(50px);
 $cnt: center;
 $background1: url(../assets/languages.jpg);
-$intro1-fonts:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$intro1-fonts: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $min-mobile: 360px;
 $max-mobile: 760px;
 $min-tablet: 768px;
@@ -33,18 +33,18 @@ $form-left: 35%;
     height: $alt;
 
     margin: $mgin;
-    
+
     background-color: $bcolor;
 }
 
 
 body {
-    @include medidas(100vh, 0,$color2 );
+    @include medidas(100vh, 0, $color2 );
 
     position: relative;
 }
 
-    header {
+header {
     padding: 9.6px;
 
     margin-bottom: -20px;
@@ -53,75 +53,172 @@ body {
 
     .logo {
         width: 23.4375vw;
-    
+
         display: flex;
-    
+
         transition: 1.2s;
 
         &:hover {
             transform: $animacion1;
-        }   
+        }
     }
 
     h1 {
         height: 5.774155995343422vh;
-    
+
         text-align: $cnt;
 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
         margin-bottom: 4.8px;
 
         margin-top: 4.8px;
-    
+
         text-decoration: underline;
-    
+
         border-width: 4.8px;
 
         color: $color2;
     }
 
-    .navbar {
-        justify-content: baseline;
+    /* Icon 1 */
 
-        border:  double;
+    .animated-icon1 {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin: 0px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .animated-icon1 span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .animated-icon1 span {
+        background: #e65100;
+    }
+
+    .animated-icon2 span {
+        background: #e3f2fd;
+    }
+
+    .animated-icon3 span {
+        background: #f3e5f5;
+    }
+
+    .animated-icon1 span:nth-child(1) {
+        top: 0px;
+    }
+
+    .animated-icon1 span:nth-child(2) {
+        top: 10px;
+    }
+
+    .animated-icon1 span:nth-child(3) {
+        top: 20px;
+    }
+
+    .animated-icon1.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+    .animated-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+
+    .animated-icon1.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
     }
 
     .navIndex {
-        width: 30vw;
+        border: 2px solid;
     }
 
-    $size-color : (
+.menu {
+    &:hover {
+        color: $color1;
+    }
+}
 
-    25px: #ff0000,
+.inicioMenu {
+    font-weight: bold;
+}
 
-    50px: #ffa500,
+.contactoMenu {
+    font-weight: bold;
+}
 
-    40px: #ffff00,
+.clasesMenu {
+    font-weight: bold;
+}
+
+.sobre-nosotrosMenu {
+    font-weight: bold;
+}
+
+    $size-color : (25px: #ff0000,
+
+        50px: #ffa500,
+
+        40px: #ffff00,
 
     );
 
-    @each $sizes, $colores in $size-color {
+    @each $sizes,
+    $colores in $size-color {
 
-    .menu-#{$sizes} {
-        text-align: $cnt;
-    
-        width: 6.25vw;
-    
-        height: $sizes;
-    
-        margin-top: $sizes;
-    
-        list-style: none;
-    }
+        .menu-#{$sizes} {
+            text-align: $cnt;
 
-    li {
-        display: inline-block;
+            width: 6.25vw;
 
-        border-right: 1px solid;
+            height: $sizes;
+
+            margin-top: $sizes;
+
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+
+            border-right: 1px solid;
+        }
     }
 }
-}
+
 .mainHtml {
     background-color: $color4;
 
@@ -129,26 +226,26 @@ body {
 
     grid-template-columns: repeat(2, 1fr);
 
-    grid-template-rows:  150px 200px 200px ;
+    grid-template-rows: 150px 200px 200px;
 
     grid-gap: 60px 100px;
 
     grid-template-areas: "text1 text1 text1 text1"
         "text2 text2 text2 text2"
         "text3 text3 text3 text3"
-        "terminos terminos terminos terminos" ;
+        "terminos terminos terminos terminos";
 
     .intro1 {
         margin-bottom: 20px;
-        
+
         text-align: justify;
-        
+
         margin-top: 20px;
-        
+
         font-family: $intro1-fonts;
-        
+
         padding: 15px;
-        
+
         grid-area: text1;
 
         font-size: $f-size1;
@@ -156,11 +253,11 @@ body {
 
     .intro2 {
         font-family: $intro1-fonts;
-        
+
         text-align: justify;
-        
+
         margin-top: 30px;
-        
+
         grid-area: text2;
 
         padding: 15px;
@@ -180,19 +277,19 @@ body {
 
     .decisiones {
         text-decoration: underline;
-    
+
         font-weight: bold;
     }
 
     .memoria {
         text-decoration: underline;
-    
+
         font-weight: bold;
     }
 
     .enfermedades {
         text-decoration: underline;
-        
+
         font-weight: bold;
     }
 }
@@ -200,7 +297,7 @@ body {
 .footerIndex {
     bottom: auto;
 
-    width: 98.6vw ;
+    width: 98.6vw;
 }
 
 footer {
@@ -224,13 +321,13 @@ footer {
 
     .terminos {
         text-align: $cnt;
-    
+
         font-weight: bold;
-    
+
         font-style: oblique;
-    
+
         margin-left: 50px;
-    
+
         grid-area: terminos;
 
         color: $color1;
@@ -238,7 +335,7 @@ footer {
 
     .terminosL {
         text-align: right;
-    
+
         grid-area: terminos;
 
         color: $color1;
@@ -248,7 +345,7 @@ footer {
 
     .redes {
         text-align: right;
-    
+
         grid-area: terminos;
     }
 }
@@ -265,14 +362,14 @@ footer {
 
 .sn {
     @extend .contacto;
-    
+
     height: 74.50523864959256vh;
 
     .equipo {
         display: inline;
-    
+
         position: relative;
-    
+
         justify-content: right;
 
         .stockEquipo {
@@ -281,7 +378,7 @@ footer {
             margin-left: 304px;
 
             &:hover {
-                transform: translate(-80px) scale(1.3) ;
+                transform: translate(-80px) scale(1.3);
             }
         }
     }
@@ -295,7 +392,7 @@ footer {
     display: inline;
 
     font-size: $f-size3;
-    
+
     margin-top: 30px;
 }
 
@@ -314,7 +411,7 @@ footer {
 
     font-size: $f-size3;
 
-    border:double;
+    border: double;
 }
 
 /* clases.html */
@@ -334,13 +431,13 @@ footer {
 }
 
 .fondo {
-@extend .contacto;
+    @extend .contacto;
 
     .clases {
         text-align: $cnt;
-    
+
         text-decoration: underline;
-    
+
         margin-bottom: 20px;
 
         color: $color5;
@@ -348,9 +445,9 @@ footer {
 
     .video {
         margin-top: 50px;
-    
+
         display: flex;
-    
+
         justify-content: $cnt;
     }
 }
@@ -419,7 +516,7 @@ footer {
     display: block;
 
     margin-left: 528px;
-    
+
 }
 
 .edad {

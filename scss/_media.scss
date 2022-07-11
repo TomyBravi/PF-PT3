@@ -14,19 +14,13 @@
     }
 
     .tituloIndex {
-        margin-bottom: 128.85px;
+        margin-bottom: 5%;
+
+        height: 100%;
     }
 
     .navIndex {
-        display: flex;
-
-        justify-content: $cnt;
-
-        position: relative;
-
-        margin-top: 32px;
-
-        margin-left: 16px;
+        margin-top: 5%;
     }
 
     .menu {
@@ -120,6 +114,12 @@
         margin-bottom: 3%;
     }
 
+    .intro2 {
+        margin-top: 20%;
+
+        padding-top: 15%;
+    }
+
     .footerIndex {
         width: 100vw;
     }
@@ -161,7 +161,7 @@
     .footerSN {
         position: relative;
 
-        bottom: -60%;
+        bottom: -80%;
 
         left: auto;
 
@@ -173,7 +173,7 @@
     .footerSN {
         position: relative;
 
-        bottom: -10%;
+        bottom: -20%;
     }
 
     #fotoStock {
@@ -191,19 +191,23 @@
     .footerSN {
         position: relative;
 
-        padding: 5%;
+        bottom: -5%;
 
-        bottom: 5%;
-
-        width: 90vw;
+        width: 100vw;
     }
 
     .sn {
-        height: 70vh;
+        height: 100%;
     }
 
     .subtSN {
         margin-bottom: 3%;
+    }
+
+    figure {
+        height: 100%;
+
+        background-color: $color4;
     }
 
     #fotoStock {
@@ -222,6 +226,10 @@
 /* Idiomas */
 
 @media only screen  and (min-width: $min-mobile) and (max-width: $max-mobile) {
+    .tituloIdiomas {
+        height: 100%;
+    }
+
     .flags {
         display:block;
     }
@@ -255,7 +263,7 @@
 
         background-size: cover;
 
-        font-size: 0.60em;
+        font-size: 0.50em;
     }
 
     .txtFrances::before {
@@ -265,7 +273,7 @@
 
         height: 18vh;
 
-        font-size: 0.55em;
+        font-size: 0.44em;
     }
 
     .txtAleman::before {
@@ -275,7 +283,7 @@
 
     height: 18vh;
 
-    font-size: 0.47em;
+    font-size: 0.38em;
     }
 
     .txtItaliano::before {
@@ -285,7 +293,7 @@
 
     height: 20vh;
 
-    font-size: 0.55em;
+    font-size: 0.46em;
     }
 
     .txtPortugues::before {
@@ -295,7 +303,7 @@
 
     height: 20vh;
 
-    font-size: 0.39em;
+    font-size: 0.33em;
     }
     
     .txtRuso::before {
@@ -305,7 +313,7 @@
 
     height: 20vh;
 
-    font-size: 0.42em;
+    font-size: 0.34em;
     }
 }
 
@@ -329,7 +337,7 @@
 
         background-size: cover;
 
-        font-size: 0.85em;
+        font-size: 0.74em;
     }
 
     .txtFrances::before {
@@ -339,7 +347,7 @@
 
         height: 20vh;
 
-        font-size: 0.68em;
+        font-size: 0.57em;
     }
 
     .txtAleman::before {
@@ -349,7 +357,7 @@
 
     height: 20vh;
 
-    font-size: 0.63em;
+    font-size: 0.51em;
     }
 
     .txtItaliano::before {
@@ -359,7 +367,7 @@
 
     height: 20vh;
 
-    font-size: 0.7em;
+    font-size: 0.56em;
     }
 
     .txtPortugues::before {
@@ -369,7 +377,7 @@
 
     height: 20vh;
 
-    font-size: 0.51em;
+    font-size: 0.42em;
     }
     
     .txtRuso::before {
@@ -379,7 +387,7 @@
 
     height: 20vh;
 
-    font-size: 0.54em;
+    font-size: 0.42em;
     }
 }
 
@@ -409,7 +417,7 @@
 
         background-size: cover;
 
-        font-size: 0.95em;
+        font-size: 0.72em;
     }
 
     .txtFrances::before {
@@ -419,7 +427,7 @@
 
         height: 25vh;
 
-        font-size: 0.75em;
+        font-size: 0.61em;
     }
 
     .txtAleman::before {
@@ -429,7 +437,7 @@
 
     height: 25vh;
 
-    font-size: 0.64em;
+    font-size: 0.53em;
     }
 
     .txtItaliano::before {
@@ -439,7 +447,7 @@
 
     height: 25vh;
 
-    font-size: 0.75em;
+    font-size: 0.58em;
     }
 
     .txtPortugues::before {
@@ -449,8 +457,8 @@
 
     height: 25vh;
 
-    font-size: 0.55em;
-    }
+    font-size: 0.42em;
+}
     
     .txtRuso::before {
     transform: scale(1.9) translate(35px) translateY(-100px);
@@ -459,7 +467,7 @@
 
     height: 25vh;
 
-    font-size: 0.57em;
+    font-size: 0.46em;
     }
 }
 
@@ -467,6 +475,8 @@
     position: relative;
 
     padding: 6%;
+
+    width: 98.6vw;
 }
 
 /* Clases */
@@ -476,6 +486,8 @@
         padding-bottom: 20px;
 
         margin-bottom: 40px;
+
+        height: 100%;
     }
 
     .navClases {
@@ -502,6 +514,12 @@
 
     .clasesTitulo {
         margin-bottom: 5%;
+    }
+}
+
+@media only screen  and (min-width: $min-desktop) and (max-width: $max-desktop) {
+    .footerClases {
+        width: 98.6vw;
     }
 }
 
@@ -614,6 +632,10 @@
 }
 
 @media only screen  and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    .tituloContacto {
+        height: 100%;
+    }
+
     .nombre {
         margin-left: 37%;
     }
